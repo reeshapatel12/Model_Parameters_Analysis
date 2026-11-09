@@ -1,0 +1,140 @@
+{
+  "total_parameter_records": 6912879,
+  "records_with_explicit_units": 4941446,
+  "records_without_units": 1971433,
+  "distinct_unit_strings": 566,
+  "most_common_units": [
+    {
+      "unit": "0.001*unit_kind_mole * (0.00027778*unit_kind_second)**-1",
+      "count": 2355483
+    },
+    {
+      "unit": "dimensionless",
+      "count": 1014699
+    },
+    {
+      "unit": "0.001*unit_kind_mole * (unit_kind_gram)**-1 * (0.000277777777777778*unit_kind_second)**-1",
+      "count": 720600
+    },
+    {
+      "unit": "unit_kind_mole * (unit_kind_second)**-1",
+      "count": 518660
+    },
+    {
+      "unit": "0.001*unit_kind_mole * (unit_kind_gram)**-1 * (3600.0*unit_kind_second)**-1",
+      "count": 241829
+    },
+    {
+      "unit": "0.001*unit_kind_mole * (unit_kind_gram)**-1 * (0.00027777*unit_kind_second)**-1",
+      "count": 42327
+    },
+    {
+      "unit": "time",
+      "count": 6751
+    },
+    {
+      "unit": "0.001*unit_kind_mole * (unknown)**-1",
+      "count": 6500
+    },
+    {
+      "unit": "0.001*unit_kind_mole * (3600.0*unit_kind_second)**-1",
+      "count": 3652
+    },
+    {
+      "unit": "0.001*unit_kind_mole * (unknown)**-1 * (unit_kind_second)**-1",
+      "count": 2734
+    },
+    {
+      "unit": "substance",
+      "count": 2575
+    },
+    {
+      "unit": "(unit_kind_second)**-1",
+      "count": 2282
+    },
+    {
+      "unit": "unit_kind_mole",
+      "count": 1797
+    },
+    {
+      "unit": "1e-09*unit_kind_mole",
+      "count": 1490
+    },
+    {
+      "unit": "(unit_kind_second)**-1 * unit_kind_dimensionless",
+      "count": 1187
+    },
+    {
+      "unit": "(0.001*unit_kind_second)**-1",
+      "count": 1084
+    },
+    {
+      "unit": "(unit_kind_dimensionless)**0",
+      "count": 987
+    },
+    {
+      "unit": "unit_kind_mole * (unknown)**-1",
+      "count": 839
+    },
+    {
+      "unit": "unit_kind_item",
+      "count": 743
+    },
+    {
+      "unit": "1e-06*unit_kind_mole * (unknown)**-1",
+      "count": 732
+    },
+    {
+      "unit": "0.001*unit_kind_volt",
+      "count": 696
+    },
+    {
+      "unit": "(unit_kind_mole)**-1 * (unit_kind_second)**-1 * 1000000000.0*unit_kind_dimensionless",
+      "count": 688
+    },
+    {
+      "unit": "(60.0*unit_kind_second)**-1",
+      "count": 672
+    },
+    {
+      "unit": "mole",
+      "count": 562
+    },
+    {
+      "unit": "0.001*unit_kind_mole",
+      "count": 530
+    },
+    {
+      "unit": "1e-09*unit_kind_mole * (unknown)**-1",
+      "count": 423
+    },
+    {
+      "unit": "0.001*unit_kind_second",
+      "count": 375
+    },
+    {
+      "unit": "1.66053872801495e-24*unit_kind_mole",
+      "count": 358
+    },
+    {
+      "unit": "(86400.0*0.1*unit_kind_second)**-1",
+      "count": 356
+    },
+    {
+      "unit": "1e-06*unit_kind_mole",
+      "count": 351
+    }
+  ],
+  "default_unit_by_dimension": {
+    "dimensionless": "dimensionless",
+    "[substance]": "mole",
+    "[temperature]": "kelvin",
+    "[mass]": "kilogram",
+    "1 / [time]": "hertz",
+    "[mass] * [length] ** 2 / [time] ** 3 / [current]": "volt",
+    "[time]": "second",
+    "[length]": "au",
+    "[mass] * [length] ** 2 / [time] ** 3 / [current] ** 2": "ohm",
+    "[length] ** 3": "litre"
+  }
+}
