@@ -1,140 +1,264 @@
 {
-  "total_parameter_records": 6912879,
-  "records_with_explicit_units": 4941446,
-  "records_without_units": 1971433,
-  "distinct_unit_strings": 566,
-  "most_common_units": [
-    {
-      "unit": "0.001*unit_kind_mole * (0.00027778*unit_kind_second)**-1",
-      "count": 2355483
-    },
-    {
-      "unit": "dimensionless",
-      "count": 1014699
-    },
-    {
-      "unit": "0.001*unit_kind_mole * (unit_kind_gram)**-1 * (0.000277777777777778*unit_kind_second)**-1",
-      "count": 720600
-    },
-    {
-      "unit": "unit_kind_mole * (unit_kind_second)**-1",
-      "count": 518660
-    },
-    {
-      "unit": "0.001*unit_kind_mole * (unit_kind_gram)**-1 * (3600.0*unit_kind_second)**-1",
-      "count": 241829
-    },
-    {
-      "unit": "0.001*unit_kind_mole * (unit_kind_gram)**-1 * (0.00027777*unit_kind_second)**-1",
-      "count": 42327
-    },
-    {
-      "unit": "time",
-      "count": 6751
-    },
-    {
-      "unit": "0.001*unit_kind_mole * (unknown)**-1",
-      "count": 6500
-    },
-    {
-      "unit": "0.001*unit_kind_mole * (3600.0*unit_kind_second)**-1",
-      "count": 3652
-    },
-    {
-      "unit": "0.001*unit_kind_mole * (unknown)**-1 * (unit_kind_second)**-1",
-      "count": 2734
-    },
-    {
-      "unit": "substance",
-      "count": 2575
-    },
-    {
-      "unit": "(unit_kind_second)**-1",
-      "count": 2282
-    },
-    {
-      "unit": "unit_kind_mole",
-      "count": 1797
-    },
-    {
-      "unit": "1e-09*unit_kind_mole",
-      "count": 1490
-    },
-    {
-      "unit": "(unit_kind_second)**-1 * unit_kind_dimensionless",
-      "count": 1187
-    },
-    {
-      "unit": "(0.001*unit_kind_second)**-1",
-      "count": 1084
-    },
-    {
-      "unit": "(unit_kind_dimensionless)**0",
-      "count": 987
-    },
-    {
-      "unit": "unit_kind_mole * (unknown)**-1",
-      "count": 839
-    },
-    {
-      "unit": "unit_kind_item",
-      "count": 743
-    },
-    {
-      "unit": "1e-06*unit_kind_mole * (unknown)**-1",
-      "count": 732
-    },
-    {
-      "unit": "0.001*unit_kind_volt",
-      "count": 696
-    },
-    {
-      "unit": "(unit_kind_mole)**-1 * (unit_kind_second)**-1 * 1000000000.0*unit_kind_dimensionless",
-      "count": 688
-    },
-    {
-      "unit": "(60.0*unit_kind_second)**-1",
-      "count": 672
-    },
-    {
-      "unit": "mole",
-      "count": 562
-    },
-    {
-      "unit": "0.001*unit_kind_mole",
-      "count": 530
-    },
-    {
-      "unit": "1e-09*unit_kind_mole * (unknown)**-1",
-      "count": 423
-    },
-    {
-      "unit": "0.001*unit_kind_second",
-      "count": 375
-    },
-    {
-      "unit": "1.66053872801495e-24*unit_kind_mole",
-      "count": 358
-    },
-    {
-      "unit": "(86400.0*0.1*unit_kind_second)**-1",
-      "count": 356
-    },
-    {
-      "unit": "1e-06*unit_kind_mole",
-      "count": 351
-    }
-  ],
+  "total_records": 89431,
+  "records_with_explicit_units": 10688,
+  "records_without_units": 78743,
+  "distinct_unit_strings": 310,
+  "records_by_type": {
+    "species": 49736,
+    "global_parameter": 37449,
+    "compartment_size": 2046,
+    "time_unit": 105,
+    "local_kinetic_parameter": 95
+  },
+  "units_by_type": {
+    "compartment_size": [
+      {
+        "unit": "0.001*litre",
+        "count": 161
+      },
+      {
+        "unit": "litre",
+        "count": 130
+      },
+      {
+        "unit": "1e-15*litre",
+        "count": 32
+      },
+      {
+        "unit": "(1e-06*metre)**2",
+        "count": 10
+      },
+      {
+        "unit": "(dimensionless)**0",
+        "count": 8
+      },
+      {
+        "unit": "dimensionless",
+        "count": 7
+      },
+      {
+        "unit": "volume",
+        "count": 6
+      },
+      {
+        "unit": "1e-12*litre",
+        "count": 5
+      },
+      {
+        "unit": "1e-06*litre",
+        "count": 4
+      },
+      {
+        "unit": "(1e-06*metre)**3",
+        "count": 3
+      },
+      {
+        "unit": "(metre)**3 * 0.001*dimensionless",
+        "count": 3
+      }
+    ],
+    "global_parameter": [
+      {
+        "unit": "(second)**-1",
+        "count": 844
+      },
+      {
+        "unit": "0.001*mole * (litre)**-1",
+        "count": 815
+      },
+      {
+        "unit": "dimensionless",
+        "count": 783
+      },
+      {
+        "unit": "(dimensionless)**0",
+        "count": 708
+      },
+      {
+        "unit": "1e-06*mole * (litre)**-1",
+        "count": 409
+      },
+      {
+        "unit": "(60.0*second)**-1",
+        "count": 327
+      },
+      {
+        "unit": "(86400.0*0.1*second)**-1",
+        "count": 309
+      },
+      {
+        "unit": "0.001*mole * (gram)**-1 * (3600.0*second)**-1",
+        "count": 293
+      },
+      {
+        "unit": "1e-09*mole * (litre)**-1",
+        "count": 288
+      },
+      {
+        "unit": "(86400.0*second)**-1",
+        "count": 182
+      },
+      {
+        "unit": "(3600.0*second)**-1",
+        "count": 159
+      },
+      {
+        "unit": "(metre)**-3 * mole",
+        "count": 155
+      },
+      {
+        "unit": "(second)**-1 * 0.0166666666666667*dimensionless",
+        "count": 148
+      },
+      {
+        "unit": "(0.001*second)**-1",
+        "count": 136
+      },
+      {
+        "unit": "mole",
+        "count": 134
+      },
+      {
+        "unit": "1e-09*mole * (litre)**-1 * (3600.0*second)**-1",
+        "count": 128
+      },
+      {
+        "unit": "1e-06*mole",
+        "count": 98
+      },
+      {
+        "unit": "(60.0*0.001*second)**-1",
+        "count": 95
+      },
+      {
+        "unit": "0.001*litre * (3600.0*100*second)**-1",
+        "count": 88
+      },
+      {
+        "unit": "0.001*volt",
+        "count": 70
+      }
+    ],
+    "species": [
+      {
+        "unit": "1e-09*mole",
+        "count": 416
+      },
+      {
+        "unit": "item",
+        "count": 404
+      },
+      {
+        "unit": "0.001*mole",
+        "count": 376
+      },
+      {
+        "unit": "mole",
+        "count": 331
+      },
+      {
+        "unit": "(dimensionless)**0",
+        "count": 148
+      },
+      {
+        "unit": "1e-06*mole",
+        "count": 138
+      },
+      {
+        "unit": "1e-18*mole",
+        "count": 47
+      },
+      {
+        "unit": "substance",
+        "count": 45
+      },
+      {
+        "unit": "1.66053872801495e-24*mole",
+        "count": 40
+      },
+      {
+        "unit": "dimensionless",
+        "count": 14
+      },
+      {
+        "unit": "1e-12*mole",
+        "count": 10
+      },
+      {
+        "unit": "1e-09*gram",
+        "count": 3
+      },
+      {
+        "unit": "au",
+        "count": 3
+      },
+      {
+        "unit": "gram",
+        "count": 2
+      }
+    ],
+    "time_unit": [
+      {
+        "unit": "86400.0*second",
+        "count": 50
+      },
+      {
+        "unit": "second",
+        "count": 39
+      },
+      {
+        "unit": "3600.0*100*second",
+        "count": 5
+      },
+      {
+        "unit": "3600.0*second",
+        "count": 5
+      },
+      {
+        "unit": "60.0*second",
+        "count": 4
+      },
+      {
+        "unit": "(dimensionless)**0",
+        "count": 1
+      },
+      {
+        "unit": "604800.0*second",
+        "count": 1
+      }
+    ]
+  },
   "default_unit_by_dimension": {
-    "dimensionless": "dimensionless",
-    "[substance]": "mole",
-    "[temperature]": "kelvin",
-    "[mass]": "kilogram",
-    "1 / [time]": "hertz",
-    "[mass] * [length] ** 2 / [time] ** 3 / [current]": "volt",
+    "dimensionless": "(dimensionless)**0",
     "[time]": "second",
-    "[length]": "au",
-    "[mass] * [length] ** 2 / [time] ** 3 / [current] ** 2": "ohm",
-    "[length] ** 3": "litre"
+    "[length] ** 3": "litre",
+    "1 / [time]": "(second)**-1",
+    "[length] ** 3 / [substance] / [time]": "(mole)**-1 * litre * (second)**-1",
+    "[length] ** 3 / [time]": "litre * (second)**-1",
+    "[substance]": "mole",
+    "1 / [substance] / [time]": "(mole)**-1 * (second)**-1",
+    "[mass] / [length] ** 3": "gram * (litre)**-1",
+    "[current] * [time] / [substance]": "10*coulomb * (10*mole)**-1",
+    "[temperature]": "kelvin",
+    "[length] ** 3 / [mass]": "(gram)**-1 * litre",
+    "[mass]": "kilogram",
+    "[substance] / [time] / [length] ** 3": "mole * (second)**-1 * (litre)**-1",
+    "[substance] / [length] ** 3": "(metre)**-3 * mole",
+    "1 / [length]": "(metre)**2 * (litre)**-1",
+    "[length] / [time]": "litre * (second)**-1 * (metre)**-2",
+    "[time] ** 2 * [current] / [length] / [mass]": "litre * (volt)**-1 * (second)**-1 * (metre)**-2",
+    "[mass] * [length] ** 2 / [time] ** 3 / [current]": "volt",
+    "[mass] * [length] ** 2 / [time] ** 2 / [substance] / [temperature]": "joule * (mole)**-1 * (kelvin)**-1",
+    "[mass] / [substance]": "(1e-06*dimensionless)**0 * gram * (mole)**-1",
+    "[mass] ** 2 / [length] ** 6": "(litre)**-2 * (gram)**2",
+    "[substance] / [time]": "mole * (second)**-1",
+    "1 / [substance]": "(mole)**-1",
+    "1 / [substance] ** 3 / [time]": "(mole)**-3 * (second)**-1",
+    "[time] * [current] / [substance]": "joule * (volt)**-1 * (mole)**-1",
+    "[length] ** 3 / [substance]": "(metre)**3 * (mole)**-1",
+    "[length] ** 6 / [substance] ** 2": "(metre)**6 * (mole)**-2",
+    "[length] ** 2": "(metre)**2",
+    "[luminosity] / [length] ** 2": "lux",
+    "[length]": "au"
   }
 }

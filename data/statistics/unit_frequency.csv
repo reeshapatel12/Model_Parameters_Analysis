@@ -1,567 +1,331 @@
-unit,count
-0.001*unit_kind_mole * (0.00027778*unit_kind_second)**-1,2355483
-dimensionless,1014699
-0.001*unit_kind_mole * (unit_kind_gram)**-1 * (0.000277777777777778*unit_kind_second)**-1,720600
-unit_kind_mole * (unit_kind_second)**-1,518660
-0.001*unit_kind_mole * (unit_kind_gram)**-1 * (3600.0*unit_kind_second)**-1,241829
-0.001*unit_kind_mole * (unit_kind_gram)**-1 * (0.00027777*unit_kind_second)**-1,42327
-time,6751
-0.001*unit_kind_mole * (unknown)**-1,6500
-0.001*unit_kind_mole * (3600.0*unit_kind_second)**-1,3652
-0.001*unit_kind_mole * (unknown)**-1 * (unit_kind_second)**-1,2734
-substance,2575
-(unit_kind_second)**-1,2282
-unit_kind_mole,1797
-1e-09*unit_kind_mole,1490
-(unit_kind_second)**-1 * unit_kind_dimensionless,1187
-(0.001*unit_kind_second)**-1,1084
-(unit_kind_dimensionless)**0,987
-unit_kind_mole * (unknown)**-1,839
-unit_kind_item,743
-1e-06*unit_kind_mole * (unknown)**-1,732
-0.001*unit_kind_volt,696
-(unit_kind_mole)**-1 * (unit_kind_second)**-1 * 1000000000.0*unit_kind_dimensionless,688
-(60.0*unit_kind_second)**-1,672
-mole,562
-0.001*unit_kind_mole,530
-1e-09*unit_kind_mole * (unknown)**-1,423
-0.001*unit_kind_second,375
-1.66053872801495e-24*unit_kind_mole,358
-(86400.0*0.1*unit_kind_second)**-1,356
-1e-06*unit_kind_mole,351
-unit_kind_mole * (unknown)**-1 * (unit_kind_second)**-1,280
-(3600.0*unit_kind_second)**-1,273
-second,249
-(86400.0*unit_kind_second)**-1,247
-6.022e+23*unit_kind_mole,238
-0.001*unit_kind_mole * (unknown)**-1 * (60.0*unit_kind_second)**-1,196
-1e-09*unit_kind_ampere,190
-1e-06*unknown,176
-(unit_kind_second)**-1 * 0.0166666666666667*unit_kind_dimensionless,176
-1e-06*unit_kind_ampere,158
-(unit_kind_second)**-1 * 0.000277777777777778*unit_kind_dimensionless,156
-(unknown)**-3 * unit_kind_mole,155
-(60.0*0.001*unit_kind_second)**-1,150
-1e-06*unit_kind_ampere * (1e-06*unit_kind_farad)**-1,150
-(unknown)**3 * (unit_kind_mole)**-1 * (unit_kind_second)**-1 * 0.277777777777778*unit_kind_dimensionless,150
-(1e-06*unit_kind_mole)**-1 * unknown * (unit_kind_second)**-1,148
-(0.0166666666666667*unit_kind_second)**-1,140
-1e-09*unit_kind_mole * (unknown)**-1 * (3600.0*unit_kind_second)**-1,128
-(unknown)**-3 * unit_kind_mole * 0.001*unit_kind_dimensionless,125
-1000*unit_kind_joule * (unit_kind_mole)**-1,122
-1e-09*unit_kind_mole * (unknown)**-1 * (60.0*unit_kind_second)**-1,119
-(unknown)**-1 * 0.001*unit_kind_mole,99
-1e-06*unit_kind_ampere * (0.01*unknown)**-2,99
-0.001*unit_kind_siemens * (0.01*unknown)**-2,98
-0.001*unit_kind_mole * (unknown)**-1 * (0.001*unit_kind_second)**-1,98
-unit_kind_mole * (unit_kind_second)**-1 * 1.66053872801495e-24*unit_kind_dimensionless,98
-(unit_kind_mole)**-1 * unknown * (unit_kind_second)**-1,97
-unknown * (unit_kind_second)**-1,97
-0.001*unknown * (3600.0*100*unit_kind_second)**-1,90
-86400.0*unit_kind_second,88
-unit_kind_dimensionless,86
-1e-06*unit_kind_siemens,82
-(1e-09*unit_kind_mole)**-1 * unknown * (unit_kind_second)**-1,81
-0.001*unit_kind_siemens,76
-1e-06*unit_kind_mole * (unknown)**-1 * (3600.0*unit_kind_second)**-1,75
-1e-06*unit_kind_mole * (unknown)**-1 * (unit_kind_second)**-1,68
-1000.0*unit_kind_dimensionless * (unknown)**3 * (unit_kind_mole)**-1 * (unit_kind_second)**-1,68
-(1e-09*unit_kind_mole)**-1 * unknown * (60.0*unit_kind_second)**-1,65
-unit_kind_dimensionless * unit_kind_ampere * (unknown)**-2,65
-(60.0*unit_kind_second)**-1 * (unit_kind_item)**-1,64
-0.001*unit_kind_dimensionless * (unknown)**-3 * unit_kind_mole,60
-0.001*unit_kind_mole * (60.0*unit_kind_second)**-1 * (unknown)**-1,54
-3600.0*unit_kind_second,53
-1e-09*unit_kind_mole * (unit_kind_second)**-1,52
-(0.001*unit_kind_mole)**-1 * unknown,51
-(unknown)**-3 * unit_kind_mole * (3600.0*unit_kind_second)**-1,51
-0.001*unit_kind_siemens * (1e-06*unit_kind_farad)**-1,50
-1e-09*unit_kind_mole * (0.001*unknown)**-3,48
-1e-18*unit_kind_mole,47
-unknown * (unit_kind_mole)**-1 * (unit_kind_second)**-1,46
-1e-06*unit_kind_ampere * (0.001*unknown)**-2,46
-(3600.0*100*unit_kind_second)**-1,44
-(6.022e+23*unit_kind_mole)**-1 * (unit_kind_second)**-1,42
-(0.277778*0.001*unit_kind_second)**-1,40
-(1e-06*unknown)**3,40
-(unknown)**2 * (1e-06*unit_kind_mole)**-1 * (unit_kind_second)**-1,40
-(16666.6666666667*unit_kind_mole)**-1 * (unit_kind_second)**-1,40
-unknown * (3600.0*unit_kind_second)**-1,39
-(1e-06*unit_kind_dimensionless)**0 * unit_kind_item * unit_kind_avogadro * (unknown)**-1,38
-unit_kind_dimensionless * (unit_kind_item)**-1 * (unit_kind_second)**-1,38
-1e-06*unit_kind_mole * (unknown)**-1 * (60.0*unit_kind_second)**-1,37
-1e-09*unit_kind_mole * (1e-06*unknown)**-1,37
-unit_kind_second,37
-1e-12*unit_kind_ampere * (1e-12*unit_kind_farad)**-1,36
-0.001*unit_kind_dimensionless * (unknown)**-3 * unit_kind_mole * (unit_kind_second)**-1,35
-(1e-09*unit_kind_mole)**-1 * unknown * (3600.0*unit_kind_second)**-1,35
-unit_kind_joule * (unit_kind_mole)**-1 * (unit_kind_kelvin)**-1,35
-1e-12*unit_kind_ampere,34
-(0.001*unit_kind_volt)**-1,33
-(0.0002778*unit_kind_second)**-1,32
-(1e-09*unit_kind_mole)**-1 * (unit_kind_second)**-1,32
-unit_kind_mole * (unit_kind_second)**-1 * 1e-09*unit_kind_dimensionless,32
-(unknown)**3 * (unit_kind_mole)**-1 * (unit_kind_second)**-1 * 16.6666666666667*unit_kind_dimensionless,32
-kelvin,31
-(unit_kind_mole)**-1 * unknown,31
-(0.001*unknown)**-1,31
-0.01*unknown,30
-(1e-06*unit_kind_mole)**-1 * unknown * (60.0*unit_kind_second)**-1,30
-1e-09*unit_kind_siemens,30
-unit_kind_joule * (unit_kind_mole)**-1,30
-unknown * (1e-09*unit_kind_mole)**-1 * (unit_kind_second)**-1,29
-(unknown)**3 * (unit_kind_mole)**-1 * (unit_kind_second)**-1 * 0.001*unit_kind_dimensionless,29
-1e-06*unit_kind_gram * (unknown)**-1 * (60.0*unit_kind_second)**-1,28
-unit_kind_mole * (unknown)**-1 * (unit_kind_second)**-1 * (unit_kind_mole)**-1 * unknown * (unit_kind_mole)**-1 * unknown,28
-10*unit_kind_dimensionless,28
-0.001*unknown * (60.0*unit_kind_second)**-1,26
-0.001*unit_kind_gram,25
-item,25
-unit_kind_coulomb * (unit_kind_mole)**-1,25
-(unknown)**-3 * unit_kind_mole * 1000.0*unit_kind_dimensionless,25
-0.001*unit_kind_mole * (unknown)**-1 * (3600.0*unit_kind_second)**-1,24
-(6000.0*0.001*unit_kind_second)**-1,24
-(0.01*unknown)**3,24
-unknown * (60.0*unit_kind_second)**-1,23
-1e-09*unit_kind_gram * (0.001*unknown)**-1,23
-(1e-18*unit_kind_mole)**-1 * (unit_kind_second)**-1,23
-(0.001*unit_kind_mole)**-1 * unknown * (unit_kind_second)**-1,22
-(0.001*unit_kind_mole)**2 * (unknown)**-2,22
-1e-09*unit_kind_mole * (unknown)**-1 * (unit_kind_second)**-1,22
-1e-12*unit_kind_dimensionless * (unknown)**2 * (unit_kind_second)**-1,22
-1e-06*unit_kind_farad,22
-(60.0*0.001*unit_kind_second)**-1 * unit_kind_volt * (0.01*unit_kind_dimensionless)**0 * (unit_kind_item)**-1,21
-(unit_kind_mole)**-1 * (unit_kind_second)**-1,20
-1e-12*unit_kind_mole,20
-(1e-06*unknown)**3 * (0.001*unit_kind_second)**-1,20
-3.6*1e-09*unit_kind_mole * (unknown)**-1 * (0.001*unit_kind_second)**-1,20
-1e-09*unit_kind_mole * (60.0*unit_kind_second)**-1 * (0.001*unit_kind_gram)**-1,19
-unknown * (1e-06*unit_kind_mole)**-1 * (unit_kind_second)**-1,19
-unit_kind_gram * (unknown)**-1,19
-(10*unit_kind_mole)**-1 * 10*unknown * (10*unit_kind_second)**-1,19
-litre,19
-(0.0115741*0.001*unit_kind_second)**-1,18
-(0.001*unit_kind_mole)**-1 * unknown * (0.001*unit_kind_second)**-1,18
-1e-09*unit_kind_mole * (0.001*unknown)**-3 * (0.001*unit_kind_second)**-1,18
-(unknown)**-3 * unit_kind_mole * (unit_kind_second)**-1 * 1000.0*unit_kind_dimensionless,18
-(6.0*10*unit_kind_second)**-1,18
-unit_kind_gram * (unknown)**-1 * (3600.0*unit_kind_second)**-1,17
-(1e-06*unit_kind_mole)**-1 * (60.0*unit_kind_second)**-1 * unknown,16
-(unknown)**-3 * unit_kind_mole * (unit_kind_second)**-1 * 16.6666666666667*unit_kind_dimensionless,16
-1e-09*unit_kind_siemens * (1e-12*unit_kind_farad)**-1,16
-(0.01*unknown)**2,16
-1e-06*unit_kind_gram * (unknown)**-1,16
-0.001*unit_kind_siemens * (0.001*unknown)**-2,16
-(1e-06*unknown)**3 * 0.001*unit_kind_mole * (unknown)**-1 * (0.001*unit_kind_second)**-1,16
-(1e-06*unit_kind_mole)**-1 * unknown * (0.001*unit_kind_second)**-1,16
-0.001*unknown,15
-(10000*unit_kind_item)**-1 * 0.001*unknown * (60.0*unit_kind_second)**-1,15
-1e-18*unit_kind_mole * (unit_kind_second)**-1,15
-(1000*unit_kind_second)**-1,15
-(unit_kind_volt)**-1 * (0.01*unit_kind_dimensionless)**0 * unit_kind_item,15
-(unknown)**3 * (unit_kind_mole)**-1 * (unit_kind_second)**-1 * 1000.0*unit_kind_dimensionless,15
-(0.001*unit_kind_mole)**-1 * unknown * (60.0*unit_kind_second)**-1,14
-1e-06*unit_kind_gram * (86400.0*unit_kind_second)**-1,14
-(unit_kind_mole)**-1 * (unit_kind_second)**-1 * 1.00369033166667e+22*unit_kind_dimensionless,14
-(unit_kind_mole)**-1 * (unit_kind_second)**-1 * 6.02214199e+23*unit_kind_dimensionless,14
-(3.6*1000*unit_kind_second)**-1 * 1e-09*unit_kind_mole * (unknown)**-1,13
-(31536000.0*unit_kind_second)**-1,13
-1e-09*unit_kind_gram,13
-(86400.0*unit_kind_second)**-1 * (unit_kind_item)**-1,13
-(3600.0*unit_kind_second)**-1 * (unknown)**3 * (unit_kind_mole)**-1,13
-1e-06*unit_kind_mole * (60.0*unit_kind_second)**-1 * (unknown)**-1,12
-1000000000000000.0*unit_kind_dimensionless * unit_kind_item * unknown * (unit_kind_mole)**-1 * (unit_kind_second)**-1,12
-(86400.0*10*unit_kind_second)**-1,12
-(unit_kind_second)**-1 * (1e-06*unit_kind_mole)**-1 * unknown,12
-(unit_kind_second)**-1 * (unit_kind_mole)**-1 * unknown,12
-0.001*unit_kind_volt * 0.001*unit_kind_mole * (unknown)**-1,12
-unit_kind_mole * (unknown)**-1 * (unit_kind_second)**-1 * (unit_kind_mole)**-1 * unknown,12
-1e-06*unknown * (unit_kind_second)**-1,12
-1e-06*unknown * (0.001*unit_kind_second)**-1,12
-0.001*unit_kind_mole * (0.001*unknown)**-1,12
-1e-15*unit_kind_ampere,11
-(1e-06*unknown)**-1,11
-unit_kind_mole * (unit_kind_second)**-1 * (unknown)**-1,11
-60.0*unit_kind_second,11
-(0.001*unit_kind_mole)**4 * (unknown)**-4,11
-unknown,11
-(1e-06*unit_kind_mole)**-1 * (60.0*0.001*unit_kind_second)**-1,11
-(unit_kind_item)**-1 * (unit_kind_second)**-1,10
-1e-06*unit_kind_dimensionless * unknown * (unit_kind_second)**-1,10
-(59.9999*unit_kind_second)**-1,10
-(16.6667*unit_kind_second)**-1,10
-(unit_kind_mole)**-1 * 0.001*unknown * (unit_kind_second)**-1,10
-unknown * (unit_kind_farad)**-1 * (unit_kind_second)**-1,10
-unknown * (unit_kind_farad)**-1 * (0.001*unit_kind_second)**-1,10
-(unknown)**-3 * unit_kind_mole * (unit_kind_second)**-1 * 2.77777777777778e-07*unit_kind_dimensionless,10
-(unknown)**-1 * unit_kind_avogadro,10
-unit_kind_mole * (unknown)**-3,10
-1000000000000.0*unit_kind_dimensionless * unit_kind_item * (unknown)**-2,9
-1000000000000.0*unit_kind_dimensionless * unit_kind_item * (unknown)**-2 * (unit_kind_second)**-1,9
-1e-06*unit_kind_farad * (0.01*unknown)**-2,9
-(86400.0*unit_kind_second)**-1 * unit_kind_item,9
-0.001*unit_kind_mole * (unit_kind_volt)**-1 * (unit_kind_second)**-1 * (unknown)**-2,9
-(60.0*0.001*unit_kind_second)**-1 * unit_kind_volt * (unit_kind_item)**-1,9
-1e-06*unit_kind_mole * (60.0*0.001*unit_kind_second)**-1,9
-(3.6*1000*unit_kind_second)**-1,8
-(unit_kind_mole)**-1 * (unit_kind_second)**-1 * unknown,8
-0.001*unit_kind_mole * (unit_kind_second)**-1 * (unknown)**-2,8
-1e-06*unit_kind_gram,8
-1e-12*unit_kind_mole * (0.0002778*unit_kind_second)**-1,8
-(0.001*unit_kind_mole)**3 * (unknown)**-3,8
-unit_kind_kelvin,8
-(0.0166667*unit_kind_second)**-1,8
-(0.001*unknown)**3 * (86400.0*0.1*unit_kind_second)**-1,8
-unit_kind_coulomb * (0.001*unit_kind_mole)**-1,8
-unknown * (unit_kind_second)**-1 * (0.01*unknown)**-2,8
-0.001*unknown * (0.001*unit_kind_second)**-1,8
-1e-06*unit_kind_gram * (0.001*unknown)**-1,8
-1e-06*unit_kind_gram * (0.001*unknown)**-1 * (60.0*unit_kind_second)**-1,8
-2592000.0*unit_kind_second,8
-(60.0*0.001*unit_kind_second)**-1 * unit_kind_volt * (0.02*unit_kind_dimensionless)**0 * (unit_kind_item)**-1,8
-(unit_kind_item)**-1 * (6.0*10*unit_kind_second)**-1,8
-unit_kind_mole * (unknown)**-2,8
-1.66666666666667e-08*unit_kind_mole * (unit_kind_second)**-1,8
-(166666666.666667*unit_kind_mole)**-2 * (unit_kind_second)**-1,8
-(1e-06*unit_kind_mole)**-1 * unknown,7
-0.001*unit_kind_mole * (unit_kind_second)**-1 * (unknown)**-1,7
-0.001*unit_kind_mole * (60.0*unit_kind_second)**-1 * (unit_kind_kilogram)**-1,7
-0.001*unit_kind_mole * (10*unknown)**-1 * (10*unit_kind_second)**-1,7
-0.001*unknown * unit_kind_dimensionless * (unit_kind_second)**-1,7
-volt,7
-1e-12*unit_kind_gram * (unknown)**-1,7
-1e-09*unit_kind_gram * (unknown)**-1,7
-(1e-06*unknown)**-1 * unit_kind_item,7
-(unknown)**-1,7
-60.0*0.001*unit_kind_second,7
-1e-12*unit_kind_siemens,6
-(1e-09*unit_kind_mole)**-1 * (60.0*unit_kind_second)**-1,6
-(10*unit_kind_second)**-1,6
-604800.0*unit_kind_second,6
-1e-09*unit_kind_sievert,6
-(1e-06*unit_kind_mole)**-2 * (unknown)**2 * (60.0*unit_kind_second)**-1,6
-1e-12*unit_kind_mole * (0.001*unknown)**-1,6
-(1e-06*unit_kind_dimensionless)**0 * unit_kind_gram * (unit_kind_mole)**-1,6
-(0.001*unit_kind_mole)**-2 * (unknown)**2,6
-unit_kind_item * (86400.0*unit_kind_second)**-1,6
-(unit_kind_mole)**-1 * unknown * (60.0*unit_kind_second)**-1,6
-86400.0*0.1*unit_kind_second,6
-(60.0*0.001*unit_kind_second)**-1 * (unit_kind_volt)**-1 * (0.01*unit_kind_dimensionless)**0 * unit_kind_item,6
-0.001*unit_kind_volt * unit_kind_second,6
-unit_kind_joule * (1000*unit_kind_mole)**-1 * (unit_kind_kelvin)**-1,6
-1e-09*unit_kind_ampere * (0.001*unit_kind_mole)**-1 * unknown,6
-0.001*unit_kind_joule * (unit_kind_mole)**-1 * (unit_kind_kelvin)**-1,6
-0.001*unit_kind_joule * (unit_kind_kelvin)**-1 * (unit_kind_mole)**-1,6
-133.322*unit_kind_newton * (unknown)**-2,6
-unit_kind_mole * (unknown)**-1 * (unit_kind_second)**-1 * (unit_kind_mole)**-1 * unknown * (0.001*unit_kind_volt)**-1,6
-unknown * (1e-09*unit_kind_mole)**-1,6
-(unknown)**6 * (unit_kind_mole)**-2 * (unit_kind_second)**-1 * 277.777777777778*unit_kind_dimensionless,6
-(unit_kind_volt)**-1 * (0.02*unit_kind_dimensionless)**0 * unit_kind_item,6
-(unit_kind_gram)**-1 * 0.001*unit_kind_mole * (0.00027777*unit_kind_second)**-1,6
-1e-06*unit_kind_mole * (86400.0*unit_kind_second)**-1,6
-0.001*unit_kind_mole * (unknown)**-1 * (60.0*0.001*unit_kind_second)**-1,6
-unit_kind_item * (unit_kind_dimensionless)**-1,6
-unit_kind_item * (60.0*unit_kind_second)**-1,5
-(1e-06*unit_kind_mole)**-1 * (0.001*unit_kind_second)**-1 * unknown,5
-(1e-09*unit_kind_mole)**-1 * (unit_kind_second)**-1 * unknown,5
-31536000.0*unit_kind_second,5
-(10000*unit_kind_item)**-1 * 0.001*unknown * unit_kind_dimensionless,5
-1e-12*unit_kind_mole * (60.0*unit_kind_second)**-1,5
-unit_kind_volt,5
-(0.001*unknown)**3,5
-(0.001*unknown)**-3,5
-(1e-06*unit_kind_dimensionless)**0 * unit_kind_item * (unknown)**-1 * (unit_kind_second)**-1,5
-(unit_kind_item)**2,5
-(unit_kind_item)**0,5
-(3600.0*unit_kind_second)**-1 * (unit_kind_gram)**-1 * 0.001*unit_kind_mole,5
-(unit_kind_gram)**-1 * (3600.0*unit_kind_second)**-1 * 0.001*unit_kind_mole,5
-unit_kind_dimensionless * (60.0*unit_kind_second)**-1,5
-unit_kind_item * (unit_kind_second)**-1,4
-1e-21*unit_kind_dimensionless * (unit_kind_item)**-1 * unit_kind_mole,4
-1e-21*unit_kind_dimensionless * (unit_kind_item)**-1 * unit_kind_mole * (unit_kind_second)**-1,4
-(0.001*unit_kind_mole)**-1 * (60.0*unit_kind_second)**-1 * unknown,4
-unit_kind_item * (1e-06*unknown)**-2 * (unit_kind_second)**-1,4
-1e-06*unit_kind_mole * (unknown)**-1 * (60.0*unit_kind_second)**-2,4
-(1e-06*unit_kind_mole)**2 * (unknown)**-2,4
-0.001*unit_kind_mole * (10*unknown)**-1,4
-(0.001*unit_kind_mole)**-1 * 10*unknown * (10*unit_kind_second)**-1,4
-604.8*1000*unit_kind_second,4
-(unit_kind_gram)**-1 * unknown,4
-(1e-06*unit_kind_mole)**-1 * unknown * (3600.0*unit_kind_second)**-1,4
-1e-09*unit_kind_mole * (60.0*unit_kind_second)**-1,4
-86400.0*10*unit_kind_second,4
-(11.5741*1000000*unit_kind_gram)**-1 * (unit_kind_second)**-1,4
-(0.0864*1e-06*unit_kind_dimensionless)**0 * 0.0864*unit_kind_gram * (unit_kind_second)**-1,4
-(0.001*unknown)**-3 * 86400.0*0.1*unit_kind_second,4
-1e-12*unit_kind_gram * (0.001*unknown)**-1,4
-0.001*unit_kind_mole * unknown * unit_kind_second,4
-86400.0*unit_kind_second * (unit_kind_item)**-1,4
-unit_kind_lux,4
-1e-06*unit_kind_farad * unit_kind_mole * (unit_kind_coulomb)**-1,4
-ohm,4
-unit_kind_ohm * 0.01*unknown,4
-(0.01*unknown)**-2,4
-(0.01*unknown)**3 * (unit_kind_second)**-1,4
-(0.001*unit_kind_mole)**-4 * (unknown)**4 * (unit_kind_second)**-1,4
-(0.001*unit_kind_mole)**-3 * (unknown)**3 * (unit_kind_second)**-1,4
-1e-12*unit_kind_farad,4
-(1e-09*unit_kind_mole)**-1 * (0.001*unknown)**3 * (0.001*unit_kind_second)**-1,4
-unit_kind_farad * unit_kind_mole * (unknown)**-1 * (unit_kind_coulomb)**-1,4
-(0.001*unit_kind_second)**-1 * (0.001*unit_kind_volt)**-1,4
-1000*unit_kind_joule * (unit_kind_mole)**-1 * (0.001*unit_kind_volt)**-1,4
-unit_kind_mole * (unknown)**-1 * (0.001*unit_kind_volt)**-1,4
-1e-06*unit_kind_gram * (unknown)**-1 * (86400.0*unit_kind_second)**-1,4
-1e-09*unit_kind_ampere * (0.001*unit_kind_mole)**-4 * (unknown)**4,4
-unit_kind_newton * (0.001*unknown)**-2,4
-(unit_kind_mole)**2 * (unknown)**-2,4
-0.001*unit_kind_newton * (0.001*unknown)**-2,4
-0.001*unit_kind_newton * (unknown)**-1,4
-1e-09*unit_kind_gram * (0.001*unknown)**-1 * (60.0*unit_kind_second)**-1,4
-0.1*unknown * (1e-06*unit_kind_gram)**-1,4
-(unknown)**-6 * (unit_kind_mole)**2 * 1e-06*unit_kind_dimensionless,4
-(60.0*0.001*unit_kind_second)**-1 * (unit_kind_volt)**-1 * (0.02*unit_kind_dimensionless)**0 * unit_kind_item,4
-(60.0*0.001*unit_kind_second)**-1 * (unit_kind_volt)**2 * (0.02*unit_kind_dimensionless)**0 * (unit_kind_item)**-2,4
-(unknown)**-1 * 1e-09*unit_kind_avogadro,4
-unknown * (1000*unit_kind_gram)**-1,4
-1e-09*unit_kind_mole * (unknown)**-1 * (60.0*0.001*unit_kind_second)**-1,4
-(0.0002777777777777778*unit_kind_second)**-1,4
-1e-06*unit_kind_mole * (0.001*unit_kind_second)**-1 * (unknown)**-1,3
-0.001*unit_kind_mole * (60.0*unit_kind_second)**-1,3
-1e-06*unknown * (0.001*unit_kind_gram)**-1,3
-(1000000*unknown)**-2 * unit_kind_item,3
-1e-06*unit_kind_mole * (unknown)**-1 * (1e-06*unknown)**-2 * (unit_kind_second)**-1,3
-unknown * (unit_kind_mole)**-1,3
-unknown * (1e-06*unit_kind_mole)**-1 * (0.01*unknown)**-1,3
-kilogram,3
-gram,3
-1e-12*unit_kind_mole * (unknown)**-1,3
-(1e-06*unit_kind_mole)**-1 * 10*unknown * (10*unit_kind_second)**-1,3
-unknown * (unit_kind_volt)**-1 * (unit_kind_second)**-1 * (unknown)**-2,3
-(unknown)**-1 * unit_kind_gram,3
-(1e-18*unit_kind_mole)**-2 * (unit_kind_second)**-1,3
-(unit_kind_mole)**-1,3
-(0.001*unit_kind_mole)**-3 * (unknown)**3,3
-(unit_kind_mole)**-2 * (unknown)**2,3
-0.001*unit_kind_mole * (unit_kind_second)**-1,3
-(unit_kind_mole)**-1 * 0.06*0.001*unknown * (unit_kind_second)**-1,3
-(8.64e-11*unknown)**6 * (unit_kind_gram)**-3 * (unit_kind_second)**-1,3
-(0.0864*0.001*unknown)**3 * (unit_kind_gram)**-2 * (unit_kind_second)**-1,3
-(0.0115741*unknown)**-3 * (unit_kind_second)**-1,3
-1000*unit_kind_second,3
-(1e-09*unit_kind_mole)**-1 * 0.001*unknown * (86400.0*0.1*unit_kind_second)**-1,3
-(0.01*unit_kind_dimensionless)**0 * unit_kind_item,3
-(unit_kind_item)**-1,3
-au,3
-(3600.0*unit_kind_second)**-1 * unknown,3
-0.001*unit_kind_gram * (3600.0*unit_kind_second)**-1,3
-(1e-06*unit_kind_mole)**-3 * (0.001*unit_kind_second)**-1 * (unknown)**3,2
-unknown * (0.001*unit_kind_second)**-1,2
-0.001*unit_kind_gram * (unknown)**-1,2
-(0.001*unit_kind_mole)**-1 * unknown * (3600.0*unit_kind_second)**-1,2
-(1e-09*unit_kind_dimensionless)**0 * (unknown)**3 * (unit_kind_mole)**-1 * (unit_kind_second)**-1,2
-(unit_kind_item)**-1 * (60.0*unit_kind_second)**-1,2
-1e-12*unit_kind_dimensionless * (unit_kind_item)**-1 * (unknown)**2 * (unit_kind_second)**-1,2
-1e-57*unit_kind_dimensionless * (unit_kind_item)**-4 * (unknown)**6 * unit_kind_mole * (unit_kind_second)**-1,2
-1e-09*unit_kind_mole * (3.6*1000*unit_kind_second)**-1,2
-unit_kind_item * (1e-06*unknown)**-2,2
-10.0*unit_kind_gray,2
-unit_kind_mole * (unit_kind_second)**-1 * (10.0*unit_kind_gray)**-1,2
-1e-06*unit_kind_mole * (unit_kind_second)**-1 * (unknown)**-1,2
-0.001*unit_kind_kilogram * (0.001*unknown)**-1,2
-(0.001*unit_kind_mole)**-1 * 10*unknown,2
-(604800.0*unit_kind_second)**-1,2
-(604.8*1000*unit_kind_second)**-1,2
-0.001*unit_kind_mole * (3600.0*unit_kind_second)**-1 * (unit_kind_gram)**-1,2
-(60.0*unit_kind_second)**-1 * (1e-12*unit_kind_mole)**-1 * unknown,2
-1e-09*unit_kind_gram * 0.001*unknown,2
-1e-09*unit_kind_mole * (unit_kind_kilogram)**-1,2
-unknown * (unit_kind_second)**-1 * (unknown)**-2,2
-(1e-09*unit_kind_mole)**-2 * (60.0*unit_kind_second)**-1,2
-1e-06*unit_kind_gram * (3600.0*unit_kind_second)**-1,2
-(unknown)**3 * (unit_kind_mole)**-1,2
-(unknown)**6 * (unit_kind_mole)**-2,2
-0.0864*unknown * (unit_kind_second)**-1,2
-(1000000*unknown)**-1,2
-0.06*0.001*unit_kind_mole * (unknown)**-1 * (unit_kind_second)**-1,2
-0.06*1e-09*unknown * (unit_kind_mole)**-1 * (unit_kind_second)**-1,2
-(0.001*unit_kind_mole)**-1 * unknown * (86400.0*0.1*unit_kind_second)**-1,2
-(0.001*unknown)**-3 * (86400.0*0.1*unit_kind_second)**-1,2
-0.001*unit_kind_gram * (unknown)**-2,2
-(unknown)**2,2
-1e-09*unit_kind_mole * (unknown)**-1 * (3600.0*100*unit_kind_second)**-1,2
-(86400.0*unit_kind_second)**-1 * (1000*unit_kind_item)**-1,2
-0.001*unit_kind_mole * unknown,2
-(1e-06*unit_kind_dimensionless)**0 * unit_kind_item,2
-(1e-06*unit_kind_dimensionless)**0 * unit_kind_item * (unknown)**-1,2
-(86400.0*unit_kind_second)**-1 * 0.01*unknown * (unit_kind_item)**-1,2
-(0.001*unit_kind_mole)**-1 * (3600.0*unit_kind_second)**-1 * unknown,2
-0.001*unit_kind_mole * (unknown)**-1 * (0.001*unit_kind_volt)**-1,2
-0.001*unit_kind_mole * (unknown)**-1 * (0.001*unit_kind_volt)**-1 * (0.001*unit_kind_second)**-1,2
-0.01*unknown * (unit_kind_second)**-1,2
-unit_kind_joule * (unit_kind_kelvin)**-1 * (1000*unit_kind_mole)**-1,2
-1e-18*unit_kind_joule * (0.001*unit_kind_mole)**-1 * (unit_kind_kelvin)**-1,2
-1e-15*unit_kind_coulomb * (0.001*unit_kind_mole)**-1,2
-1e-12*unit_kind_joule * (1e-09*unit_kind_mole)**-1 * (unit_kind_kelvin)**-1,2
-1e-09*unit_kind_coulomb * (1e-09*unit_kind_mole)**-1,2
-1e-06*unit_kind_farad * (0.001*unknown)**-2,2
-(1e-09*unit_kind_mole)**-4 * (0.001*unknown)**12 * (0.001*unit_kind_second)**-1,2
-(1e-09*unit_kind_mole)**-3 * (0.001*unknown)**9 * (0.001*unit_kind_second)**-1,2
-0.001*unit_kind_farad,2
-(1e-06*unit_kind_mole)**-4 * (unknown)**4 * (0.001*unit_kind_second)**-1,2
-(1e-06*unit_kind_mole)**-3 * (unknown)**3 * (0.001*unit_kind_second)**-1,2
-(unit_kind_volt)**-1,2
-unit_kind_joule * (unit_kind_kelvin)**-1,2
-unit_kind_joule * 0.001*unit_kind_second,2
-(1e-06*unknown)**2,2
-(0.001*unit_kind_second)**-3,2
-0.001*unit_kind_mole * (unknown)**-1 * (0.001*unit_kind_second)**-1 * (0.001*unit_kind_volt)**-1,2
-0.001*unknown * (60.0*unit_kind_second)**-1 * (133.322*unit_kind_newton)**-1 * (unknown)**2,2
-(unknown)**-1 * 0.001*unknown,2
-(unknown)**-1 * 0.001*unknown * (60.0*unit_kind_second)**-1,2
-(0.1*unknown)**2 * (60.0*unit_kind_second)**-1 * (133.322*unit_kind_newton)**-1 * (unknown)**2,2
-(1e-09*unit_kind_mole)**-1 * unknown,2
-unit_kind_ohm * (0.01*unknown)**2,2
-1e-06*unit_kind_mole * (0.01*unknown)**-2 * (unit_kind_second)**-1,2
-1e-06*unit_kind_mole * (unknown)**-1 * (0.001*unit_kind_second)**-1 * (1e-06*unknown)**3,2
-(0.001*unit_kind_mole)**-3 * (unknown)**3 * (0.001*unit_kind_second)**-1,2
-(0.001*unit_kind_mole)**-2 * (unknown)**2 * (0.001*unit_kind_second)**-1,2
-(2592000.0*unit_kind_second)**-1,2
-unknown * (1e-09*unit_kind_gram)**-1,2
-(unknown)**2 * (1e-09*unit_kind_gram)**-2,2
-(unit_kind_mole)**3 * (unknown)**-3,2
-0.001*unit_kind_newton * (unknown)**-1 * (0.001*unit_kind_second)**-1,2
-1e-06*unit_kind_mole * (unknown)**-1 * (0.001*unit_kind_second)**-1,2
-celsius,2
-1e-06*unit_kind_gram * (0.1*unknown)**-1,2
-(unknown)**3 * (unit_kind_mole)**-1 * 1000.0*unit_kind_dimensionless,2
-(60.0*0.001*unit_kind_second)**-1 * (0.02*unit_kind_dimensionless)**0 * unit_kind_item,2
-unit_kind_mole * (unknown)**-1 * (3600.0*100*unit_kind_second)**-1,2
-(1e-09*unit_kind_mole)**-3 * (unit_kind_second)**-1,2
-(unit_kind_mole)**-2 * unknown * (unit_kind_second)**-1,2
-unknown * (1e-09*unit_kind_mole)**-1 * (60.0*unit_kind_second)**-1,2
-1000*unit_kind_gram,2
-0.1*unknown,2
-(unknown)**4 * (1e-06*unit_kind_mole)**-3 * (unit_kind_second)**-1,2
-(unit_kind_second)**-1 * (unit_kind_mole)**-2 * (unknown)**6,2
-(unit_kind_second)**-1 * (unit_kind_mole)**-1 * (unknown)**3,2
-unit_kind_mole * (unknown)**-2 * (unit_kind_second)**-1,2
-1e-09*unit_kind_farad,2
-1e-06*unit_kind_mole * (unknown)**-1 * (1e-09*unit_kind_coulomb)**-1,2
-(0.001*unit_kind_mole)**-4 * (unknown)**4,2
-(unknown)**3 * (1e-06*unit_kind_mole)**-2 * (unit_kind_second)**-1,2
-(unknown)**-1 * 1e-06*unit_kind_mole,2
-1e-12*unit_kind_siemens * (0.001*unit_kind_volt)**-1,1
-(1e-06*unit_kind_mole)**-2 * (0.001*unit_kind_second)**-1 * (unknown)**2,1
-1e-06*unit_kind_mole * (0.001*unit_kind_second)**-1,1
-1e-15*unit_kind_farad,1
-1e-15*unit_kind_ampere * 0.001*unit_kind_second * (1e-06*unit_kind_mole)**-1,1
-(1e-06*unit_kind_mole)**-4 * (unit_kind_second)**-1 * (unknown)**4,1
-(1e-06*unit_kind_mole)**-3 * (unit_kind_second)**-1 * (unknown)**3,1
-unknown * (0.001*unit_kind_gram)**-1 * (60.0*unit_kind_second)**-1,1
-0.001*unit_kind_mole * (0.001*unit_kind_gram)**-1 * (60.0*unit_kind_second)**-1,1
-1e-18*unit_kind_avogadro,1
-(1000000*unit_kind_avogadro)**-1,1
-(1e-06*unit_kind_mole)**-3 * (unknown)**3 * (unit_kind_second)**-1,1
-(1e-06*unit_kind_mole)**-2 * (unknown)**2 * (unit_kind_second)**-1,1
-1e-33*unit_kind_dimensionless * (unit_kind_item)**-2 * (unknown)**2 * unit_kind_mole * (unit_kind_second)**-1,1
-1e-30*unit_kind_dimensionless * (unit_kind_item)**-2 * (unknown)**5 * (unit_kind_second)**-1,1
-1e-18*unit_kind_dimensionless * (unit_kind_item)**-1 * (unknown)**3 * (unit_kind_second)**-1,1
-1e-09*unit_kind_dimensionless * (unknown)**-2 * unit_kind_mole * (unit_kind_second)**-1,1
-3.6*1000*unit_kind_second,1
-(3.6*1000*unit_kind_second)**-1 * (1e-09*unit_kind_mole)**-1 * unknown,1
-(unit_kind_item)**-1 * 1e-06*unit_kind_mole * (unknown)**-1 * (1e-06*unknown)**-3,1
-1000000.0*unit_kind_dimensionless * (unknown)**6 * (unit_kind_mole)**-2 * (unit_kind_second)**-1,1
-(0.01*unknown)**-1,1
-(1e-06*unit_kind_mole)**-4 * (unit_kind_second)**-1 * (unknown)**-1,1
-0.001*unit_kind_mole * (10*unknown)**-1 * (0.001*unit_kind_volt)**-1,1
-0.001*unit_kind_joule * (10*unit_kind_mole)**-1,1
-10*unit_kind_coulomb * (10*unit_kind_mole)**-1,1
-0.001*unit_kind_joule * (10*unit_kind_mole)**-1 * (10*unit_kind_kelvin)**-1,1
-0.001*unit_kind_mole * (10*unknown)**-1 * (10*unit_kind_second)**-1 * (0.001*unit_kind_volt)**-1,1
-(0.001*unit_kind_mole)**-2 * (10*unknown)**2 * (10*unit_kind_second)**-1,1
-unit_kind_second * (604800.0*unit_kind_second)**-1,1
-0.01*unknown * 604800.0*unit_kind_second,1
-(0.01*unknown)**-1 * (604800.0*unit_kind_second)**-1,1
-(6.048*1000*unit_kind_second)**-1 * (unknown)**-1,1
-6.048*1000*unit_kind_second * unknown,1
-unknown * (unit_kind_kilogram)**-1,1
-0.001*unknown * unknown * (1e-06*unit_kind_kilogram)**-1,1
-1e-06*unit_kind_kilogram * (unknown)**-1,1
-1e-06*unit_kind_kilogram,1
-hertz,1
-unknown * (0.001*unit_kind_mole)**-1,1
-0.001*unknown * (1e-09*unit_kind_gram)**-1 * (unit_kind_second)**-1,1
-(unit_kind_dimensionless)**-1 * 0.001*unknown * (60.0*unit_kind_second)**-1,1
-(10*unit_kind_mole)**-2 * (10*unknown)**2 * (10*unit_kind_second)**-1,1
-(unit_kind_second)**-1 * (0.001*unit_kind_mole)**-1 * unknown,1
-(unknown)**2 * (unknown)**-1,1
-(unknown)**-2 * (unit_kind_gram)**2,1
-1e-12*unit_kind_mole * (1e-06*unit_kind_gram)**-1,1
-(unit_kind_mole)**-3 * (unit_kind_second)**-1,1
-(unknown)**-3 * unit_kind_mole * 1e-06*unit_kind_dimensionless,1
-unit_kind_gram * (unit_kind_mole)**-1,1
-unit_kind_kilogram,1
-(0.001*unit_kind_mole)**-1 * (unit_kind_second)**-1,1
-unit_kind_joule * (unit_kind_volt)**-1 * (unit_kind_mole)**-1,1
-unit_kind_joule * (unit_kind_kelvin)**-1 * (unit_kind_mole)**-1,1
-(3600.0*unit_kind_second)**-1 * (unknown)**6 * (unit_kind_mole)**-2,1
-(11.5741*unknown)**-1 * (unit_kind_second)**-1,1
-(1000000000000*unit_kind_mole)**-1,1
-(0.0210257884474482*unknown)**6 * (unit_kind_gram)**-3 * (unit_kind_second)**-1,1
-(0.442083779836846*0.001*unknown)**3 * (unit_kind_gram)**-2 * (unit_kind_second)**-1,1
-(0.226201636946546*unknown)**-3 * (unit_kind_second)**-1,1
-(0.1*unknown)**3,1
-0.001*unit_kind_mole * (unknown)**-1 * (86400.0*0.1*unit_kind_second)**-1,1
-0.999999999999999*1e-12*unit_kind_mole * (0.001*unknown)**-4 * (86400.0*0.1*unit_kind_second)**-1,1
-1e-09*unit_kind_mole * (0.001*unknown)**-1 * (86400.0*0.1*unit_kind_second)**-1,1
-1e-09*unit_kind_mole * (0.001*unknown)**-1,1
-(0.7937005259841*0.001*unknown)**3,1
-(0.001*unknown)**2 * (86400.0*0.1*unit_kind_second)**-1,1
-(43200.0*0.1*unit_kind_second)**-1,1
-(unknown)**3,1
-1e-15*unit_kind_mole,1
-(1e-15*unit_kind_mole)**-1 * (86400.0*0.1*unit_kind_second)**-1,1
-1e-15*unit_kind_mole * (86400.0*0.1*unit_kind_second)**-1,1
-(0.001*unknown)**-2 * (86400.0*0.1*unit_kind_second)**-1,1
-86400.0*100000*unit_kind_second,1
-(86400.0*100000*unit_kind_second)**-1,1
-1e-12*unit_kind_gram * (0.001*unknown)**-1 * (3600.0*unit_kind_second)**-1,1
-1e-09*unit_kind_gram * (unknown)**-1 * (3600.0*100*unit_kind_second)**-1,1
-(1e-09*unit_kind_dimensionless)**0 * (unknown)**3,1
-0.001*unknown * (86400.0*unit_kind_second)**-1 * (unit_kind_item)**-1,1
-unit_kind_item * (0.001*unknown)**-1,1
-unit_kind_item * (0.001*unknown)**-1 * (86400.0*unit_kind_second)**-1,1
-unknown * (unit_kind_second)**-1 * (unit_kind_item)**-1,1
-(1000*unknown)**-1 * unit_kind_item,1
-(unknown)**-1 * (unit_kind_second)**-1 * unit_kind_item,1
-1000*unit_kind_item,1
-(86400.0*unit_kind_second)**-1 * 1000*unit_kind_item,1
-(1e-09*unit_kind_mole)**-2 * (unknown)**2 * (unit_kind_second)**-1,1
-(1e-06*unknown)**-1 * 86400.0*unit_kind_second * unit_kind_item,1
-1e-06*unknown * (86400.0*unit_kind_second)**-1 * (unit_kind_item)**-1,1
-86400.0*unit_kind_second * (unit_kind_item)**-2,1
-6.02214199e+23*unit_kind_dimensionless,1
-unknown * (3600.0*100*unit_kind_second)**-1,1
-(1e-06*unit_kind_dimensionless)**0,1
-(1e-09*unit_kind_mole)**-6 * (unit_kind_second)**-1,1
-(1e-09*unit_kind_mole)**-2 * (unit_kind_second)**-1,1
-(1e-09*unit_kind_mole)**-1 * (unknown)**-1 * (unit_kind_second)**-1,1
-(unit_kind_mole)**-2 * (unit_kind_second)**-1 * 3.62661941477212e+47*unit_kind_dimensionless,1
-(unit_kind_mole)**-1 * 1000*unit_kind_joule,1
-(unknown)**-1 * 1.66053906717385e-24*unit_kind_avogadro,1
-(0.001*unit_kind_gram)**-1,1
-unit_kind_gram * (unit_kind_avogadro)**-1,1
-(3600.0*unit_kind_second)**-1 * (unknown)**-1 * 1e-09*unit_kind_avogadro,1
-1e-09*unit_kind_avogadro * (1.66053906717385e-24*unit_kind_avogadro)**-1,1
-0.001*unknown * (1e-09*unit_kind_gram)**-1 * (60.0*unit_kind_second)**-1,1
-unknown * (1e-06*unit_kind_mole)**-1,1
-(unit_kind_item)**-2 * (unit_kind_second)**-1,1
-(unknown)**-3 * unit_kind_mole * (unit_kind_second)**-1 * 0.277777777777778*unit_kind_dimensionless,1
-0.001*unit_kind_mole * (0.001*unit_kind_gram)**-1,1
-(1000*unit_kind_gram)**-1 * unknown,1
-0.001*unit_kind_gram * (60.0*0.001*unit_kind_second)**-1,1
-10.0*0.001*unit_kind_gram * (unknown)**-1,1
-(0.1*unknown)**2,1
-unknown * (1000*unit_kind_gram)**-1 * (3600.0*unit_kind_second)**-1,1
-0.1*unknown * (3600.0*unit_kind_second)**-1,1
-(1000000*unit_kind_mole)**-1 * unknown * (0.0002777777777777778*unit_kind_second)**-1,1
+record_type,units,count
+compartment_size,0.001*litre,161
+compartment_size,litre,130
+compartment_size,1e-15*litre,32
+compartment_size,(1e-06*metre)**2,10
+compartment_size,(dimensionless)**0,8
+compartment_size,dimensionless,7
+compartment_size,volume,6
+compartment_size,1e-12*litre,5
+compartment_size,1e-06*litre,4
+compartment_size,(1e-06*metre)**3,3
+compartment_size,(metre)**3 * 0.001*dimensionless,3
+global_parameter,(second)**-1,844
+global_parameter,0.001*mole * (litre)**-1,815
+global_parameter,dimensionless,783
+global_parameter,(dimensionless)**0,708
+global_parameter,1e-06*mole * (litre)**-1,409
+global_parameter,(60.0*second)**-1,327
+global_parameter,(86400.0*0.1*second)**-1,309
+global_parameter,0.001*mole * (gram)**-1 * (3600.0*second)**-1,293
+global_parameter,1e-09*mole * (litre)**-1,288
+global_parameter,(86400.0*second)**-1,182
+global_parameter,(3600.0*second)**-1,159
+global_parameter,(metre)**-3 * mole,155
+global_parameter,(second)**-1 * 0.0166666666666667*dimensionless,148
+global_parameter,(0.001*second)**-1,136
+global_parameter,mole,134
+global_parameter,1e-09*mole * (litre)**-1 * (3600.0*second)**-1,128
+global_parameter,1e-06*mole,98
+global_parameter,(60.0*0.001*second)**-1,95
+global_parameter,0.001*litre * (3600.0*100*second)**-1,88
+global_parameter,0.001*volt,70
+global_parameter,1e-06*mole * (litre)**-1 * (3600.0*second)**-1,67
+global_parameter,(60.0*second)**-1 * (item)**-1,64
+global_parameter,item,57
+global_parameter,0.001*mole * (litre)**-1 * (second)**-1,56
+global_parameter,(metre)**-3 * mole * (3600.0*second)**-1,51
+global_parameter,(metre)**-3 * mole * 0.001*dimensionless,46
+global_parameter,1e-06*mole * (litre)**-1 * (second)**-1,41
+global_parameter,second,40
+global_parameter,(1e-06*dimensionless)**0 * item * avogadro * (litre)**-1,38
+global_parameter,1e-09*mole,38
+global_parameter,mole * (litre)**-1,38
+global_parameter,(3600.0*100*second)**-1,36
+global_parameter,1e-09*mole * (litre)**-1 * (60.0*second)**-1,36
+global_parameter,(0.0002778*second)**-1,32
+global_parameter,(1e-09*mole)**-1 * litre * (second)**-1,31
+global_parameter,(mole)**-1 * litre * (second)**-1,31
+global_parameter,(1e-06*mole)**-1 * litre * (60.0*second)**-1,30
+global_parameter,(metre)**3 * (mole)**-1 * (second)**-1 * 16.6666666666667*dimensionless,30
+global_parameter,(0.001*litre)**-1,29
+global_parameter,litre * (1e-09*mole)**-1 * (second)**-1,29
+global_parameter,1e-06*mole * (litre)**-1 * (60.0*second)**-1,28
+global_parameter,3600.0*second,28
+global_parameter,litre * (3600.0*second)**-1,26
+global_parameter,0.001*mole * (60.0*second)**-1 * (litre)**-1,23
+global_parameter,0.001*dimensionless * (metre)**-3 * mole * (second)**-1,21
+global_parameter,litre * (mole)**-1 * (second)**-1,21
+global_parameter,1e-09*gram * (0.001*litre)**-1,20
+global_parameter,(1e-09*mole)**-1 * litre * (60.0*second)**-1,19
+global_parameter,gram * (litre)**-1,19
+global_parameter,(0.0115741*0.001*second)**-1,18
+global_parameter,(mole)**-1 * (second)**-1,18
+global_parameter,0.001*gram,18
+global_parameter,0.001*litre * (60.0*second)**-1,18
+global_parameter,gram * (litre)**-1 * (3600.0*second)**-1,17
+global_parameter,(1e-09*mole)**-1 * (second)**-1,16
+global_parameter,(6000.0*0.001*second)**-1,16
+global_parameter,(metre)**-3 * mole * (second)**-1 * 16.6666666666667*dimensionless,16
+global_parameter,(metre)**-3 * mole * 1000.0*dimensionless,16
+global_parameter,86400.0*second,16
+global_parameter,(1000*second)**-1,15
+global_parameter,(10000*item)**-1 * 0.001*litre * (60.0*second)**-1,15
+global_parameter,1e-09*mole * (litre)**-1 * (second)**-1,15
+global_parameter,1e-09*mole * (second)**-1,15
+global_parameter,(60.0*0.001*second)**-1 * volt * (0.01*dimensionless)**0 * (item)**-1,14
+global_parameter,(31536000.0*second)**-1,13
+global_parameter,(3600.0*second)**-1 * (metre)**3 * (mole)**-1,13
+global_parameter,(86400.0*second)**-1 * (item)**-1,13
+global_parameter,(86400.0*10*second)**-1,12
+global_parameter,(1e-06*mole)**-1 * (60.0*0.001*second)**-1,11
+global_parameter,1e-06*ampere * (0.01*metre)**-2,11
+global_parameter,1e-15*ampere,11
+global_parameter,litre * (60.0*second)**-1,11
+global_parameter,mole * (second)**-1,11
+global_parameter,(0.277778*0.001*second)**-1,10
+global_parameter,(16.6667*second)**-1,10
+global_parameter,(59.9999*second)**-1,10
+global_parameter,(mole)**-1 * 0.001*litre * (second)**-1,10
+global_parameter,(volt)**-1 * (0.01*dimensionless)**0 * item,10
+global_parameter,0.001*siemens * (0.01*metre)**-2,10
+global_parameter,(86400.0*second)**-1 * item,9
+global_parameter,0.001*litre,9
+global_parameter,0.001*mole * (volt)**-1 * (second)**-1 * (metre)**-2,9
+global_parameter,1e-06*mole * (60.0*0.001*second)**-1,9
+global_parameter,1e-09*gram,9
+global_parameter,1e-12*mole,9
+global_parameter,litre,9
+global_parameter,mole * (second)**-1 * (litre)**-1,9
+global_parameter,(0.001*metre)**3 * (86400.0*0.1*second)**-1,8
+global_parameter,(0.001*mole)**-1 * litre * (60.0*second)**-1,8
+global_parameter,(0.0166667*second)**-1,8
+global_parameter,(1e-06*mole)**-1 * litre * (second)**-1,8
+global_parameter,(mole)**-1 * (second)**-1 * litre,8
+global_parameter,0.001*mole * (second)**-1 * (metre)**-2,8
+global_parameter,1e-12*mole * (0.0002778*second)**-1,8
+global_parameter,volt,8
+global_parameter,(1e-06*litre)**-1 * item,7
+global_parameter,(1e-06*mole)**-1 * litre,7
+global_parameter,0.001*mole * (60.0*second)**-1 * (kilogram)**-1,7
+global_parameter,0.001*mole * (second)**-1 * (litre)**-1,7
+global_parameter,1e-12*gram * (litre)**-1,7
+global_parameter,(1e-06*dimensionless)**0 * gram * (mole)**-1,6
+global_parameter,(1e-06*mole)**-2 * (litre)**2 * (60.0*second)**-1,6
+global_parameter,(1e-09*mole)**-1 * (60.0*second)**-1,6
+global_parameter,(60.0*0.001*second)**-1 * volt * (item)**-1,6
+global_parameter,0.001*mole * (10*litre)**-1 * (10*second)**-1,6
+global_parameter,0.001*volt * second,6
+global_parameter,1000000000000.0*dimensionless * item * (metre)**-2 * (second)**-1,6
+global_parameter,1e-09*sievert,6
+global_parameter,1e-12*mole * (0.001*litre)**-1,6
+global_parameter,1e-12*siemens,6
+global_parameter,604800.0*second,6
+global_parameter,86400.0*0.1*second,6
+global_parameter,item * (86400.0*second)**-1,6
+global_parameter,kelvin,6
+global_parameter,litre * (1e-06*mole)**-1 * (second)**-1,6
+global_parameter,(0.001*metre)**-3,5
+global_parameter,(0.001*metre)**3,5
+global_parameter,(10000*item)**-1 * 0.001*litre * dimensionless,5
+global_parameter,(1e-06*dimensionless)**0 * item * (litre)**-1 * (second)**-1,5
+global_parameter,(1e-06*mole)**-1 * (0.001*second)**-1 * litre,5
+global_parameter,(1e-09*mole)**-1 * (second)**-1 * litre,5
+global_parameter,1e-12*mole * (60.0*second)**-1,5
+global_parameter,31536000.0*second,5
+global_parameter,60.0*second,5
+global_parameter,(0.001*metre)**-3 * 86400.0*0.1*second,4
+global_parameter,(0.0864*1e-06*dimensionless)**0 * 0.0864*gram * (second)**-1,4
+global_parameter,(11.5741*1000000*gram)**-1 * (second)**-1,4
+global_parameter,(1e-09*mole)**-1 * litre * (3600.0*second)**-1,4
+global_parameter,(60.0*0.001*second)**-1 * (volt)**-1 * (0.01*dimensionless)**0 * item,4
+global_parameter,(gram)**-1 * litre,4
+global_parameter,0.001*mole,4
+global_parameter,0.001*mole * (10*litre)**-1,4
+global_parameter,0.001*mole * (litre)**-1 * (60.0*second)**-1,4
+global_parameter,0.001*mole * litre * second,4
+global_parameter,0.01*metre,4
+global_parameter,1e-06*ampere,4
+global_parameter,1e-06*mole * (60.0*second)**-1 * (litre)**-1,4
+global_parameter,1e-06*mole * (litre)**-1 * (60.0*second)**-2,4
+global_parameter,1e-09*mole * (1e-06*litre)**-1,4
+global_parameter,1e-09*mole * (60.0*second)**-1,4
+global_parameter,604.8*1000*second,4
+global_parameter,86400.0*10*second,4
+global_parameter,86400.0*second * (item)**-1,4
+global_parameter,item * (1e-06*metre)**-2 * (second)**-1,4
+global_parameter,item * (60.0*second)**-1,4
+global_parameter,kilogram,4
+global_parameter,lux,4
+global_parameter,(0.0115741*metre)**-3 * (second)**-1,3
+global_parameter,(0.0864*0.001*metre)**3 * (gram)**-2 * (second)**-1,3
+global_parameter,(1000000*metre)**-2 * item,3
+global_parameter,(1e-06*mole)**-1 * 10*litre * (10*second)**-1,3
+global_parameter,(1e-06*mole)**-1 * litre * (3600.0*second)**-1,3
+global_parameter,(1e-09*mole)**-1 * 0.001*litre * (86400.0*0.1*second)**-1,3
+global_parameter,(8.64e-11*metre)**6 * (gram)**-3 * (second)**-1,3
+global_parameter,(item)**-1,3
+global_parameter,(item)**2,3
+global_parameter,(litre)**-1 * gram,3
+global_parameter,(mole)**-1,3
+global_parameter,(mole)**-1 * 0.06*0.001*litre * (second)**-1,3
+global_parameter,0.001*mole * (second)**-1,3
+global_parameter,0.001*second,3
+global_parameter,1000*second,3
+global_parameter,1e-06*farad * (0.01*metre)**-2,3
+global_parameter,1e-06*litre * (0.001*gram)**-1,3
+global_parameter,1e-06*mole * (0.001*second)**-1 * (litre)**-1,3
+global_parameter,litre * (1e-06*mole)**-1 * (0.01*metre)**-1,3
+global_parameter,litre * (second)**-1,3
+global_parameter,litre * (volt)**-1 * (second)**-1 * (metre)**-2,3
+global_parameter,(0.001*metre)**-3 * (86400.0*0.1*second)**-1,2
+global_parameter,(0.001*mole)**-1 * (3600.0*second)**-1 * litre,2
+global_parameter,(0.001*mole)**-1 * 10*litre,2
+global_parameter,(0.001*mole)**-1 * litre * (86400.0*0.1*second)**-1,2
+global_parameter,(0.01*dimensionless)**0 * item,2
+global_parameter,(10*second)**-1,2
+global_parameter,(1000000*litre)**-1,2
+global_parameter,(1e-06*dimensionless)**0 * item,2
+global_parameter,(1e-06*dimensionless)**0 * item * (litre)**-1,2
+global_parameter,(1e-06*mole)**-3 * (0.001*second)**-1 * (litre)**3,2
+global_parameter,(1e-09*dimensionless)**0 * (metre)**3 * (mole)**-1 * (second)**-1,2
+global_parameter,(1e-09*mole)**-2 * (60.0*second)**-1,2
+global_parameter,(3.6*1000*second)**-1 * 1e-09*mole * (litre)**-1,2
+global_parameter,(60.0*second)**-1 * (1e-12*mole)**-1 * litre,2
+global_parameter,(604.8*1000*second)**-1,2
+global_parameter,(604800.0*second)**-1,2
+global_parameter,(86400.0*second)**-1 * (1000*item)**-1,2
+global_parameter,(86400.0*second)**-1 * 0.01*metre * (item)**-1,2
+global_parameter,(item)**-1 * (second)**-1,2
+global_parameter,(metre)**3 * (mole)**-1,2
+global_parameter,(metre)**6 * (mole)**-2,2
+global_parameter,0.001*dimensionless * (metre)**-3 * mole,2
+global_parameter,0.001*kilogram * (0.001*litre)**-1,2
+global_parameter,0.001*metre,2
+global_parameter,0.001*mole * (3600.0*second)**-1 * (gram)**-1,2
+global_parameter,0.001*mole * litre,2
+global_parameter,0.06*0.001*mole * (litre)**-1 * (second)**-1,2
+global_parameter,0.06*1e-09*litre * (mole)**-1 * (second)**-1,2
+global_parameter,0.0864*litre * (second)**-1,2
+global_parameter,10.0*gray,2
+global_parameter,1000.0*dimensionless * (metre)**3 * (mole)**-1 * (second)**-1,2
+global_parameter,1000000000000.0*dimensionless * item * (metre)**-2,2
+global_parameter,1e-06*gram * (3600.0*second)**-1,2
+global_parameter,1e-06*mole * (second)**-1 * (litre)**-1,2
+global_parameter,1e-09*gram * 0.001*litre,2
+global_parameter,1e-09*mole * (kilogram)**-1,2
+global_parameter,1e-09*mole * (litre)**-1 * (3600.0*100*second)**-1,2
+global_parameter,1e-12*gram * (0.001*litre)**-1,2
+global_parameter,1e-12*mole * (litre)**-1,2
+global_parameter,1e-21*dimensionless * (item)**-1 * mole,2
+global_parameter,litre * (0.001*second)**-1,2
+global_parameter,litre * (second)**-1 * (metre)**-2,2
+global_parameter,mole * (second)**-1 * (10.0*gray)**-1,2
+global_parameter,(0.001*metre)**-2 * (86400.0*0.1*second)**-1,1
+global_parameter,(0.001*metre)**2 * (86400.0*0.1*second)**-1,1
+global_parameter,(0.001*mole)**-1 * (second)**-1,1
+global_parameter,(0.001*volt)**-1,1
+global_parameter,(0.01*metre)**-1,1
+global_parameter,(0.01*metre)**-1 * (604800.0*second)**-1,1
+global_parameter,(0.0210257884474482*metre)**6 * (gram)**-3 * (second)**-1,1
+global_parameter,(0.1*metre)**3,1
+global_parameter,(0.226201636946546*metre)**-3 * (second)**-1,1
+global_parameter,(0.442083779836846*0.001*metre)**3 * (gram)**-2 * (second)**-1,1
+global_parameter,(0.7937005259841*0.001*metre)**3,1
+global_parameter,(1000*litre)**-1 * item,1
+global_parameter,(1000000*avogadro)**-1,1
+global_parameter,(1000000000000*mole)**-1,1
+global_parameter,(11.5741*litre)**-1 * (second)**-1,1
+global_parameter,(1e-06*litre)**-1 * 86400.0*second * item,1
+global_parameter,(1e-06*mole)**-2 * (0.001*second)**-1 * (litre)**2,1
+global_parameter,(1e-06*mole)**-4 * (second)**-1 * (litre)**-1,1
+global_parameter,(1e-09*dimensionless)**0 * (metre)**3,1
+global_parameter,(1e-09*mole)**-2 * (litre)**2 * (second)**-1,1
+global_parameter,(1e-15*mole)**-1 * (86400.0*0.1*second)**-1,1
+global_parameter,(3.6*1000*second)**-1,1
+global_parameter,(3600.0*second)**-1 * (metre)**6 * (mole)**-2,1
+global_parameter,(43200.0*0.1*second)**-1,1
+global_parameter,(6.048*1000*second)**-1 * (metre)**-1,1
+global_parameter,(86400.0*100000*second)**-1,1
+global_parameter,(86400.0*second)**-1 * 1000*item,1
+global_parameter,(dimensionless)**-1 * 0.001*litre * (60.0*second)**-1,1
+global_parameter,(item)**-1 * 1e-06*mole * (litre)**-1 * (1e-06*metre)**-3,1
+global_parameter,(litre)**-1 * (second)**-1 * item,1
+global_parameter,(litre)**-2 * (gram)**2,1
+global_parameter,(metre)**-3 * mole * 1e-06*dimensionless,1
+global_parameter,(metre)**2,1
+global_parameter,(metre)**2 * (litre)**-1,1
+global_parameter,(metre)**3,1
+global_parameter,(mole)**-3 * (second)**-1,1
+global_parameter,(second)**-1 * (0.001*mole)**-1 * litre,1
+global_parameter,0.001*gram * (metre)**-2,1
+global_parameter,0.001*joule * (10*mole)**-1,1
+global_parameter,0.001*joule * (10*mole)**-1 * (10*kelvin)**-1,1
+global_parameter,0.001*litre * (1e-09*gram)**-1 * (second)**-1,1
+global_parameter,0.001*litre * (86400.0*second)**-1 * (item)**-1,1
+global_parameter,0.001*litre * dimensionless * (second)**-1,1
+global_parameter,0.001*metre * litre * (1e-06*kilogram)**-1,1
+global_parameter,0.001*mole * (10*litre)**-1 * (0.001*volt)**-1,1
+global_parameter,0.001*mole * (10*litre)**-1 * (10*second)**-1 * (0.001*volt)**-1,1
+global_parameter,0.001*mole * (litre)**-1 * (86400.0*0.1*second)**-1,1
+global_parameter,0.01*metre * 604800.0*second,1
+global_parameter,0.999999999999999*1e-12*mole * (0.001*metre)**-4 * (86400.0*0.1*second)**-1,1
+global_parameter,10*coulomb * (10*mole)**-1,1
+global_parameter,1000*item,1
+global_parameter,1e-06*gram,1
+global_parameter,1e-06*kilogram,1
+global_parameter,1e-06*kilogram * (litre)**-1,1
+global_parameter,1e-06*litre * (86400.0*second)**-1 * (item)**-1,1
+global_parameter,1e-06*mole * (0.001*second)**-1,1
+global_parameter,1e-09*gram * (litre)**-1,1
+global_parameter,1e-09*gram * (litre)**-1 * (3600.0*100*second)**-1,1
+global_parameter,1e-09*mole * (0.001*litre)**-1,1
+global_parameter,1e-09*mole * (0.001*litre)**-1 * (86400.0*0.1*second)**-1,1
+global_parameter,1e-12*gram * (0.001*litre)**-1 * (3600.0*second)**-1,1
+global_parameter,1e-12*mole * (1e-06*gram)**-1,1
+global_parameter,1e-12*siemens * (0.001*volt)**-1,1
+global_parameter,1e-15*ampere * 0.001*second * (1e-06*mole)**-1,1
+global_parameter,1e-15*farad,1
+global_parameter,1e-15*mole,1
+global_parameter,1e-15*mole * (86400.0*0.1*second)**-1,1
+global_parameter,1e-18*avogadro,1
+global_parameter,3.6*1000*second,1
+global_parameter,6.048*1000*second * metre,1
+global_parameter,86400.0*100000*second,1
+global_parameter,86400.0*second * (item)**-2,1
+global_parameter,coulomb * (mole)**-1,1
+global_parameter,gram,1
+global_parameter,gram * (mole)**-1,1
+global_parameter,hertz,1
+global_parameter,item * (0.001*litre)**-1,1
+global_parameter,item * (0.001*litre)**-1 * (86400.0*second)**-1,1
+global_parameter,item * (second)**-1,1
+global_parameter,joule * (kelvin)**-1 * (mole)**-1,1
+global_parameter,joule * (mole)**-1 * (kelvin)**-1,1
+global_parameter,joule * (volt)**-1 * (mole)**-1,1
+global_parameter,litre * (0.001*mole)**-1,1
+global_parameter,litre * (kilogram)**-1,1
+global_parameter,litre * (second)**-1 * (item)**-1,1
+global_parameter,second * (604800.0*second)**-1,1
+global_parameter,time,1
+species,1e-09*mole,416
+species,item,404
+species,0.001*mole,376
+species,mole,331
+species,(dimensionless)**0,148
+species,1e-06*mole,138
+species,1e-18*mole,47
+species,substance,45
+species,1.66053872801495e-24*mole,40
+species,dimensionless,14
+species,1e-12*mole,10
+species,1e-09*gram,3
+species,au,3
+species,gram,2
+time_unit,86400.0*second,50
+time_unit,second,39
+time_unit,3600.0*100*second,5
+time_unit,3600.0*second,5
+time_unit,60.0*second,4
+time_unit,(dimensionless)**0,1
+time_unit,604800.0*second,1
