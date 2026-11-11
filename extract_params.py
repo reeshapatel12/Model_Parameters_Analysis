@@ -38,10 +38,8 @@ session.headers.update({"User-Agent": "BioModelsParameterResearch/1.0"})
 
 CSV_FIELDS = [
     "model_id", "model_name", "organism", "authors", "publication_id",
-    "publication_title", "journal", "publication_year", "publication_url",
-    "description", "cell_type", "tissue", "disease", "pathway",
-    "modeling_approach", "model_type", "model_format", "submission_id",
-    "submitter", "tags", "record_type",
+    "publication_title", "cell_type", "tissue", "disease", "pathway",
+    "modeling_approach", "model_type", "model_format", "record_type",
     "parameter_id", "parameter_name", "value", "units",
     "compartment", "reaction_id", "sbml_file", "curated"
 ]
