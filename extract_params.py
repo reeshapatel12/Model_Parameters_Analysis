@@ -38,26 +38,38 @@ session.headers.update({"User-Agent": "BioModelsParameterResearch/1.0"})
 
 CSV_FIELDS = [
     "model_id", "model_name", "organism", "authors", "publication_id",
-    "publication_title", "cell_type", "tissue", "disease", "pathway",
-    "modeling_approach", "tags", "record_type",
+    "publication_title", "journal", "publication_year", "publication_url",
+    "description", "cell_type", "tissue", "disease", "pathway",
+    "modeling_approach", "model_type", "model_format", "submission_id",
+    "submitter", "tags", "record_type",
     "parameter_id", "parameter_name", "value", "units",
     "compartment", "reaction_id", "sbml_file", "curated"
 ]
 MODEL_METADATA_FIELDS = [
     "model_id", "model_name", "organism", "authors", "publication_id",
-    "publication_title", "cell_type", "tissue", "disease", "pathway",
-    "modeling_approach", "tags", "metadata_json",
+    "publication_title", "journal", "publication_year", "publication_url",
+    "description", "cell_type", "tissue", "disease", "pathway",
+    "modeling_approach", "model_type", "model_format", "submission_id",
+    "submitter", "tags",
 ]
 
 CONTEXT_KEYS = {
     "authors": {"author", "authors", "creator", "creators", "publicationauthor", "publicationauthors"},
     "publication_id": {"publicationid", "pubmedid", "pmid", "doi"},
     "publication_title": {"publicationtitle", "articletitle", "papertitle"},
+    "journal": {"journal", "journalname", "publicationjournal"},
+    "publication_year": {"publicationyear", "year", "publicationdate"},
+    "publication_url": {"publicationurl", "articleurl", "doiurl"},
+    "description": {"description", "abstract", "modeldescription"},
     "cell_type": {"celltype", "celltypes", "cellline", "celllines"},
     "tissue": {"tissue", "tissues", "tissuetype"},
     "disease": {"disease", "diseases"},
     "pathway": {"pathway", "pathways"},
     "modeling_approach": {"modelingapproach", "modelapproach", "modellingapproach"},
+    "model_type": {"modeltype", "modellingtype", "modelingtype"},
+    "model_format": {"modelformat", "format"},
+    "submission_id": {"submissionid"},
+    "submitter": {"submitter", "submittedby"},
     "tags": {"tag", "tags", "keywords", "keyword"},
 }
 
@@ -80,21 +92,31 @@ def _display_values(value: Any) -> list[str]:
     return []
 
 def get_model_context(metadata: dict[str, Any]) -> dict[str, str | None]:
-    """Extract common context fields while preserving the full response separately."""
+    """Extract named model and publication fields from BioModels metadata."""
     values: dict[str, list[str]] = {field: [] for field in CONTEXT_KEYS}
 
-    def visit(obj: Any):
+    def visit(obj: Any, inside_publication: bool = False):
         if isinstance(obj, dict):
             for key, value in obj.items():
                 normalized_key = re.sub(r"[^a-z]", "", key.lower())
+                if inside_publication:
+                    publication_aliases = {
+                        "title": "publication_title", "id": "publication_id",
+                        "year": "publication_year", "journal": "journal",
+                        "url": "publication_url", "doi": "publication_id",
+                    }
+                    field = publication_aliases.get(normalized_key)
+                    if field:
+                        values[field].extend(_display_values(value))
                 for field, aliases in CONTEXT_KEYS.items():
                     if normalized_key in aliases:
                         values[field].extend(_display_values(value))
                         break
-                visit(value)
+                is_publication = normalized_key in {"publication", "publications", "relatedpublication"}
+                visit(value, inside_publication or is_publication)
         elif isinstance(obj, list):
             for value in obj:
-                visit(value)
+                visit(value, inside_publication)
 
     visit(metadata)
     context: dict[str, str | None] = {}
@@ -131,8 +153,10 @@ def get_model_organism(metadata: dict[str, Any], xml_text: str) -> str | None:
     def search(obj: Any) -> str | None:
         if isinstance(obj, dict):
             for k, v in obj.items():
-                if k.lower() in {key.lower() for key in keys} and isinstance(v, (str, int)):
-                    return str(v)
+                if k.lower() in {key.lower() for key in keys}:
+                    labels = _display_values(v)
+                    if labels:
+                        return "; ".join(labels)
                 found = search(v)
                 if found: return found
         elif isinstance(obj, list):
@@ -260,7 +284,6 @@ def main():
                 "model_name": metadata.get("name"),
                 "organism": get_model_organism(metadata, ""),
                 **model_context,
-                "metadata_json": json.dumps(metadata, ensure_ascii=False, separators=(",", ":")),
             })
             
             try:
