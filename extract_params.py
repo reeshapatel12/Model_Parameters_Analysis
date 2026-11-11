@@ -26,6 +26,7 @@ API = "https://www.biomodels.org"
 TIMEOUT = 90
 PAUSE_SECONDS = 0.15
 OUTPUT_CSV = RAW_DIR / "parameters_raw.csv"
+MODEL_METADATA_CSV = RAW_DIR / "models_metadata.csv"
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger("biomodels-extractor")
@@ -36,10 +37,72 @@ session.mount("https://", HTTPAdapter(max_retries=retry))
 session.headers.update({"User-Agent": "BioModelsParameterResearch/1.0"})
 
 CSV_FIELDS = [
-    "model_id", "model_name", "organism", "record_type",
+    "model_id", "model_name", "organism", "authors", "publication_id",
+    "publication_title", "cell_type", "tissue", "disease", "pathway",
+    "modeling_approach", "tags", "record_type",
     "parameter_id", "parameter_name", "value", "units",
     "compartment", "reaction_id", "sbml_file", "curated"
 ]
+MODEL_METADATA_FIELDS = [
+    "model_id", "model_name", "organism", "authors", "publication_id",
+    "publication_title", "cell_type", "tissue", "disease", "pathway",
+    "modeling_approach", "tags", "metadata_json",
+]
+
+CONTEXT_KEYS = {
+    "authors": {"author", "authors", "creator", "creators", "publicationauthor", "publicationauthors"},
+    "publication_id": {"publicationid", "pubmedid", "pmid", "doi"},
+    "publication_title": {"publicationtitle", "articletitle", "papertitle"},
+    "cell_type": {"celltype", "celltypes", "cellline", "celllines"},
+    "tissue": {"tissue", "tissues", "tissuetype"},
+    "disease": {"disease", "diseases"},
+    "pathway": {"pathway", "pathways"},
+    "modeling_approach": {"modelingapproach", "modelapproach", "modellingapproach"},
+    "tags": {"tag", "tags", "keywords", "keyword"},
+}
+
+def _display_values(value: Any) -> list[str]:
+    """Flatten API metadata values into readable labels without losing lists."""
+    if isinstance(value, (str, int, float)):
+        text = str(value).strip()
+        return [text] if text else []
+    if isinstance(value, list):
+        return [label for item in value for label in _display_values(item)]
+    if isinstance(value, dict):
+        # Prefer a human-readable label over accession/resource fields.
+        for key in ("fullName", "full_name", "displayName", "display_name", "name", "label", "title", "value"):
+            if value.get(key):
+                return _display_values(value[key])
+        given = value.get("givenName") or value.get("given_name") or value.get("firstName") or value.get("first_name")
+        family = value.get("familyName") or value.get("family_name") or value.get("lastName") or value.get("last_name")
+        if given or family:
+            return [" ".join(str(part).strip() for part in (given, family) if part).strip()]
+    return []
+
+def get_model_context(metadata: dict[str, Any]) -> dict[str, str | None]:
+    """Extract common context fields while preserving the full response separately."""
+    values: dict[str, list[str]] = {field: [] for field in CONTEXT_KEYS}
+
+    def visit(obj: Any):
+        if isinstance(obj, dict):
+            for key, value in obj.items():
+                normalized_key = re.sub(r"[^a-z]", "", key.lower())
+                for field, aliases in CONTEXT_KEYS.items():
+                    if normalized_key in aliases:
+                        values[field].extend(_display_values(value))
+                        break
+                visit(value)
+        elif isinstance(obj, list):
+            for value in obj:
+                visit(value)
+
+    visit(metadata)
+    context: dict[str, str | None] = {}
+    for field, entries in values.items():
+        # Keep order while removing repeated values found in nested API objects.
+        unique = list(dict.fromkeys(entry for entry in entries if entry))
+        context[field] = "; ".join(unique) or None
+    return context
 
 def get_all_public_model_ids() -> list[str]:
     try:
@@ -64,7 +127,7 @@ def fetch_model_metadata(model_id: str) -> dict[str, Any]:
         return {}
 
 def get_model_organism(metadata: dict[str, Any], xml_text: str) -> str | None:
-    keys = ("organism", "organismName", "taxon", "taxonomy", "species")
+    keys = ("organism", "organismName", "taxon", "taxonomy")
     def search(obj: Any) -> str | None:
         if isinstance(obj, dict):
             for k, v in obj.items():
@@ -105,6 +168,7 @@ def extract_from_sbml(model_id: str, sbml_path: Path, metadata: dict[str, Any]) 
     model_name = model.getName() if model.isSetName() else metadata.get("name")
     xml_text = sbml_path.read_text(errors="ignore")
     organism = get_model_organism(metadata, xml_text)
+    context = get_model_context(metadata)
     
     # Unit attributes may refer to named <unitDefinition>s. Resolve those IDs
     # once so output contains their definitions instead of opaque references.
@@ -121,6 +185,7 @@ def extract_from_sbml(model_id: str, sbml_path: Path, metadata: dict[str, Any]) 
                    value: Any, units: str | None, compartment: str | None = None):
         records.append({
             "model_id": model_id, "model_name": model_name, "organism": organism,
+            **context,
             "record_type": record_type, "parameter_id": parameter_id,
             "parameter_name": name, "value": value,
             "units": unit_map.get(units, units) if units else None,
@@ -180,13 +245,23 @@ def extract_from_sbml(model_id: str, sbml_path: Path, metadata: dict[str, Any]) 
 def main():
     # No sample limit is applied: this run covers all IDs in the curated branch.
     ids = get_all_public_model_ids()
-    with OUTPUT_CSV.open("w", newline="", encoding="utf-8") as f:
+    with OUTPUT_CSV.open("w", newline="", encoding="utf-8") as f, MODEL_METADATA_CSV.open("w", newline="", encoding="utf-8") as mf:
         writer = csv.DictWriter(f, fieldnames=CSV_FIELDS)
+        metadata_writer = csv.DictWriter(mf, fieldnames=MODEL_METADATA_FIELDS)
         writer.writeheader()
+        metadata_writer.writeheader()
 
         for index, model_id in enumerate(ids, start=1):
             log.info("[%d/%d] Processing %s", index, len(ids), model_id)
             metadata = fetch_model_metadata(model_id)
+            model_context = get_model_context(metadata)
+            metadata_writer.writerow({
+                "model_id": model_id,
+                "model_name": metadata.get("name"),
+                "organism": get_model_organism(metadata, ""),
+                **model_context,
+                "metadata_json": json.dumps(metadata, ensure_ascii=False, separators=(",", ":")),
+            })
             
             try:
                 response = session.get(f"{API}/model/download/{model_id}", timeout=TIMEOUT)
