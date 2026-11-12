@@ -1,0 +1,186 @@
+{
+  "total_records": 15999,
+  "records_with_explicit_units": 15000,
+  "records_without_units": 999,
+  "distinct_unit_strings": 99,
+  "records_by_type": {
+    "global_parameter": 10585,
+    "species": 3026,
+    "local_kinetic_parameter": 1521,
+    "compartment_size": 653,
+    "time_unit": 214
+  },
+  "units_by_type": {
+    "compartment_size": [
+      {
+        "unit": "litre",
+        "count": 460
+      },
+      {
+        "unit": "(0.1*metre)**2",
+        "count": 193
+      }
+    ],
+    "global_parameter": [
+      {
+        "unit": "(second)**-1",
+        "count": 2302
+      },
+      {
+        "unit": "1e-06*mole * 0.1*metre * (litre)**-1 * (second)**-1",
+        "count": 1050
+      },
+      {
+        "unit": "1e-06*mole * (0.1*metre)**-1 * (second)**-1",
+        "count": 996
+      },
+      {
+        "unit": "litre * (second)**-1 * (1e-06*mole)**-1",
+        "count": 938
+      },
+      {
+        "unit": "1e-06*mole * (litre)**-1",
+        "count": 920
+      },
+      {
+        "unit": "dimensionless",
+        "count": 532
+      },
+      {
+        "unit": "(1e-06*mole)**-1 * litre * (second)**-1",
+        "count": 368
+      },
+      {
+        "unit": "1e-06*mole * (litre)**-1 * (second)**-1",
+        "count": 332
+      },
+      {
+        "unit": "(0.1*metre)**2 * (second)**-1",
+        "count": 277
+      },
+      {
+        "unit": "coulomb * (mole)**-1",
+        "count": 216
+      },
+      {
+        "unit": "1e-06*metre",
+        "count": 175
+      },
+      {
+        "unit": "0.1*metre",
+        "count": 171
+      },
+      {
+        "unit": "second",
+        "count": 165
+      },
+      {
+        "unit": "1e-06*metre * (second)**-1",
+        "count": 101
+      },
+      {
+        "unit": "1e-06*mole * (0.1*metre)**-2 * (second)**-1",
+        "count": 90
+      },
+      {
+        "unit": "(1e-06*metre)**2 * (item)**-1 * (second)**-1",
+        "count": 71
+      },
+      {
+        "unit": "(1e-06*metre)**2 * (second)**-1",
+        "count": 69
+      },
+      {
+        "unit": "1e-06*mole * (0.1*metre)**-2",
+        "count": 61
+      },
+      {
+        "unit": "1e-06*mole * (litre)**-1 * (1e-06*metre)**3 * (item)**-1",
+        "count": 61
+      },
+      {
+        "unit": "(0.1*metre)**2 * (second)**-1 * (1e-06*mole)**-1",
+        "count": 58
+      }
+    ],
+    "local_kinetic_parameter": [
+      {
+        "unit": "1e-12*ampere * (0.1*metre)**-2",
+        "count": 750
+      },
+      {
+        "unit": "dimensionless",
+        "count": 750
+      },
+      {
+        "unit": "1e-06*mole * (litre)**-1 * (second)**-1",
+        "count": 21
+      }
+    ],
+    "species": [
+      {
+        "unit": "1e-06*mole",
+        "count": 3026
+      }
+    ],
+    "time_unit": [
+      {
+        "unit": "second",
+        "count": 214
+      }
+    ]
+  },
+  "default_unit_by_dimension": {
+    "[time]": "second",
+    "[length] ** 3": "litre",
+    "[length] ** 2": "(0.1*metre)**2",
+    "[substance]": "1e-06*mole",
+    "[length]": "1e-06*metre",
+    "[substance] / [length] ** 2 / [time]": "1e-06*mole * 0.1*metre * (litre)**-1 * (second)**-1",
+    "[length] ** 2 / [time]": "(0.1*metre)**2 * (second)**-1",
+    "[length] ** 3 / [substance] / [time]": "litre * (second)**-1 * (1e-06*mole)**-1",
+    "1 / [time]": "(second)**-1",
+    "[current] * [time] / [substance]": "coulomb * (mole)**-1",
+    "[substance] / [length] ** 3": "1e-06*mole * (litre)**-1",
+    "[substance] / [length] ** 3 / [time]": "1e-06*mole * (litre)**-1 * (second)**-1",
+    "dimensionless": "dimensionless",
+    "[length] ** 2 / [time] / [substance]": "(0.1*metre)**2 * (second)**-1 * (1e-06*mole)**-1",
+    "[length] ** 4 / [time] / [substance]": "(litre)**2 * (0.1*metre)**-2 * (second)**-1 * (1e-06*mole)**-1",
+    "[length] ** 4 / [time] / [substance] ** 2": "(0.1*metre)**4 * (second)**-1 * (1e-06*mole)**-2",
+    "[length] / [substance] / [time]": "item * (1e-06*metre)**-2 * (1e-06*mole)**-1 * litre * (second)**-1",
+    "[substance] / [length] ** 2": "1e-06*mole * (0.1*metre)**-2",
+    "[current] / [length] ** 2": "1e-12*ampere * (0.1*metre)**-2",
+    "[substance] / [length] / [time]": "1e-06*mole * (0.1*metre)**-1 * (second)**-1",
+    "[mass] * [length] ** 2 / [time] ** 2 / [temperature] / [substance]": "0.001*volt * coulomb * (kelvin)**-1 * (mole)**-1",
+    "[length] ** 4 / [time]": "(1e-24*metre)**4 * (item)**-2 * (second)**-1",
+    "[length] ** 5 / [substance] / [time]": "(1e-09*metre)**5 * (item)**-1 * (mole)**-1 * (second)**-1",
+    "[length] ** 3 / [time]": "(2.7777777777778e-07*metre)**3 * (second)**-1",
+    "[substance] / [time]": "1e-06*mole * (litre)**-1 * (1e-06*metre)**3 * (item)**-1 * (second)**-1",
+    "[length] ** 6 * [substance] / [time]": "(1e-57*metre)**6 * mole * (item)**-4 * (second)**-1",
+    "[length] / [time]": "1e-06*metre * (second)**-1",
+    "1 / [length] ** 2": "item * (1e-06*metre)**-2",
+    "[temperature]": "kelvin",
+    "[length] / [substance]": "item * (1e-06*metre)**-2 * (1e-06*mole)**-1 * litre",
+    "1 / [length]": "(1e-06*metre)**-1",
+    "[length] ** 3 / [substance]": "(1e-06*mole)**-1 * litre",
+    "[length] ** 2 * [substance] / [time]": "(1e-33*metre)**2 * mole * (item)**-2 * (second)**-1",
+    "[length] ** 5 / [time]": "(1e-30*metre)**5 * (item)**-2 * (second)**-1",
+    "[mass] / [length] / [time] ** 2": "1000*pascal",
+    "[length] ** 15 / [substance] ** 5": "(1e-06*mole)**-5 * (litre)**5",
+    "[length] ** 6 / [substance] ** 2 / [time]": "(litre)**2 * (second)**-1 * (1e-06*mole)**-2",
+    "1 / [substance]": "item * (1e-06*metre)**-3 * (1e-06*mole)**-1 * litre",
+    "[length] ** 8 / [time] / [substance] ** 2": "(1e-06*metre)**2 * (second)**-1 * (1e-06*mole)**-2 * (litre)**2 * (item)**-1",
+    "1 / [length] ** 2 / [time]": "item * (1e-06*metre)**-2 * (second)**-1",
+    "[length] ** 9 / [substance] ** 3 / [time]": "(1000000000.0*metre)**9 * (mole)**-3 * (second)**-1",
+    "[length] ** 6 / [substance] / [time]": "(2.7777777777778e-10*metre)**6 * (mole)**-1 * (second)**-1",
+    "[substance] ** 2 / [length] ** 6 / [time]": "(1e-06*mole)**2 * (metre)**-6 * (second)**-1",
+    "[length] ** 5 / [time] / [substance] ** 2": "litre * (0.1*metre)**2 * (second)**-1 * (1e-06*mole)**-2",
+    "[length] ** 7 / [time] / [substance] ** 3": "(0.1*metre)**4 * litre * (second)**-1 * (1e-06*mole)**-3",
+    "[length] ** 4 / [substance] ** 2 / [time]": "item * (1e-06*metre)**-2 * (1e-06*mole)**-2 * (litre)**2 * (second)**-1",
+    "1 / [time] ** 2": "(second)**-2",
+    "1 / [time] ** 4": "(second)**-4",
+    "1 / [time] ** 7": "(second)**-7",
+    "1 / [time] ** 11": "(second)**-11",
+    "1 / [time] ** 5": "(second)**-5"
+  }
+}
