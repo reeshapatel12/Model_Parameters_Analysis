@@ -1,0 +1,463 @@
+record_type,units,count
+cellml_variable,dimensionless,40936
+cellml_variable,0.001 * (mole) * (liter) ** -1,6631
+cellml_variable,0.001 * (volt),4764
+cellml_variable,(second) ** -1,2819
+cellml_variable,1e-06 * (ampere) * (1e-06 * (farad)) ** -1,2347
+cellml_variable,(0.001 * (second)) ** -1,1844
+cellml_variable,0.001 * (second),1584
+cellml_variable,1e-06 * (mole) * (liter) ** -1,1237
+cellml_variable,1e-12 * (ampere) * (1e-12 * (farad)) ** -1,1193
+cellml_variable,kelvin,1167
+cellml_variable,second,1147
+cellml_variable,(meter) ** -3 * mole,1091
+cellml_variable,1e-09 * (ampere),1005
+cellml_variable,(60 * (second)) ** -1,987
+cellml_variable,0.001 * (mole) * (liter) ** -1 * (0.001 * (second)) ** -1,789
+cellml_variable,1e-09 * (mole) * (liter) ** -1,766
+cellml_variable,(1000 * (second)) ** -1,701
+cellml_variable,(0.001 * (meter)) ** -3 * mole,664
+cellml_variable,coulomb * (mole) ** -1,650
+cellml_variable,gram * (meter) ** 2 * (second) ** -3 * (ampere) ** -1,570
+cellml_variable,1000 * (gram) * (meter) ** 2 * (second) ** -4 * (ampere) ** -1,514
+cellml_variable,dimensionless * (60 * (second)) ** -1,478
+cellml_variable,litre,477
+cellml_variable,1e-12 * (ampere),473
+cellml_variable,1e-06 * (mole) * (liter) ** -1 * (second) ** -1,470
+cellml_variable,volt,455
+cellml_variable,1e-15 * (mole) * (second) ** -1,437
+cellml_variable,ampere * (farad) ** -1,433
+cellml_variable,1e-06 * (liter),419
+cellml_variable,0.001 * (siemens) * (1e-06 * (farad)) ** -1,417
+cellml_variable,1e-06 * (meter),401
+cellml_variable,(3600 * (second)) ** -1,362
+cellml_variable,1e-06 * (ampere),331
+cellml_variable,(liter) ** -1 * 1e-06 * (mole),329
+cellml_variable,mole * (liter) ** -1,329
+cellml_variable,0.001 * (mole) * (liter) ** -1 * (second) ** -1,300
+cellml_variable,1e-09 * (siemens) * (1e-12 * (farad)) ** -1,290
+cellml_variable,joule * (1000 * (mole)) ** -1 * (kelvin) ** -1,285
+cellml_variable,joule * (mole) ** -1,281
+cellml_variable,(86400 * (second)) ** -1,280
+cellml_variable,1e-09 * (siemens),247
+cellml_variable,1e-09 * (mole) * (liter) ** -1 * (3600 * (second)) ** -1,246
+cellml_variable,hertz,225
+cellml_variable,coulomb * (0.001 * (mole)) ** -1,209
+cellml_variable,1e-06 * (siemens),198
+cellml_variable,1e-15 * (mole),197
+cellml_variable,(1e-15 * (mole)) ** -1,196
+cellml_variable,1e-12 * (mole) * (liter) ** -1,193
+cellml_variable,liter * (second) ** -1,188
+cellml_variable,(0.01 * (meter)) ** -2 * ampere,176
+cellml_variable,0.001 * (siemens) * (0.001 * (farad)) ** -1,171
+cellml_variable,1e-06 * (ampere) * (0.001 * (meter)) ** -2,170
+cellml_variable,1e-09 * (mole) * (0.001 * (meter)) ** -3,170
+cellml_variable,joule * (mole) ** -1 * (kelvin) ** -1,166
+cellml_variable,(1e-06 * (meter)) ** 3,160
+cellml_variable,133.32 * (pascal),160
+cellml_variable,(1000 * (meter)) ** -3 * (second) ** -1 * mole,153
+cellml_variable,mole,152
+cellml_variable,mole * (second) ** -1,147
+cellml_variable,0.001 * (mole) * (liter) ** -1 * (60 * (second)) ** -1,146
+cellml_variable,1e-06 * (mole),132
+cellml_variable,joule * (liter) ** -1,130
+cellml_variable,(0.001 * (mole) * (liter) ** -1) ** -1 * (0.001 * (second)) ** -1,128
+cellml_variable,1e-12 * (mole) * (0.01 * (meter)) ** -2 * (0.001 * (second)) ** -1,124
+cellml_variable,(1000 * (meter)) ** 3 * (second) ** -1 * (mole) ** -1,118
+cellml_variable,(0.001 * (volt)) ** -1,114
+cellml_variable,1000 * (pascal),114
+cellml_variable,0.01 * (meter) * (second) ** -1,113
+cellml_variable,joule * (liter) ** -1 * (liter * (second) ** -1) ** -1,113
+cellml_variable,0.001 * (liter),111
+cellml_variable,(0.001 * (mole) * (liter) ** -1) ** -1 * (second) ** -1,110
+cellml_variable,0.001 * (volt) * 1e-09 * (siemens),108
+cellml_variable,(dimensionless) ** -1 * (60 * (second)) ** -1,106
+cellml_variable,(second) ** -1 * (1e-06 * (mole) * (liter) ** -1) ** -1,96
+cellml_variable,1e-12 * (farad),96
+cellml_variable,1e-09 * (mole) * (liter) ** -1 * (second) ** -1,95
+cellml_variable,(0.001 * (meter)) ** 3,89
+cellml_variable,1e-12 * (mole) * (liter) ** -1 * (86400 * (second)) ** -1,88
+cellml_variable,joule * (liter) ** -1 * (liter) ** -1,87
+cellml_variable,mole * (liter) ** -1 * (second) ** -1,86
+cellml_variable,(1e-06 * (meter)) ** 3 * 0.001 * (mole) * (liter) ** -1 * (0.001 * (second)) ** -1,84
+cellml_variable,(0.01 * (meter)) ** 2,83
+cellml_variable,1e-06 * (mole) * (liter) ** -1 * (0.001 * (second)) ** -1,83
+cellml_variable,1e-06 * (farad) * (0.01 * (meter)) ** -2,81
+cellml_variable,(gram) ** -1 * (meter) ** -2 * (second) ** 3 * ampere,79
+cellml_variable,(0.001 * (meter)) ** -3 * (second) ** -1 * mole,78
+cellml_variable,(0.001 * (mole) * (liter) ** -1) ** 4,75
+cellml_variable,(1e-06 * (liter)) ** -1,70
+cellml_variable,0.001 * (liter) * (second) ** -1,70
+cellml_variable,133.32 * (pascal) * (0.001 * (liter)) ** -1 * second,70
+cellml_variable,1e-09 * (ampere) * (0.01 * (meter)) ** -2,68
+cellml_variable,(mole * (liter) ** -1) ** -1 * (second) ** -1,67
+cellml_variable,liter,66
+cellml_variable,1e+09 * (pascal) * (meter) ** -1,64
+cellml_variable,1e-06 * (siemens) * (0.01 * (meter)) ** -2,64
+cellml_variable,(1e-06 * (meter)) ** 3 * (0.001 * (second)) ** -1,63
+cellml_variable,(1e-09 * (meter)) ** 3,63
+cellml_variable,(1e-06 * (mole)) ** -1 * (liter) ** -1,57
+cellml_variable,(1e-15 * (second)) ** -1 * mole,57
+cellml_variable,0.001 * (liter) * (133.32 * (pascal)) ** -1,56
+cellml_variable,(1e-18 * (meter)) ** 3,55
+cellml_variable,(1e-15 * (gram)) ** -1 * (meter) ** -2 * (second) ** 4 * (ampere) ** 2,50
+cellml_variable,0.001 * (siemens),49
+cellml_variable,1e-06 * (meter) * (second) ** -1,48
+cellml_variable,1e-12 * (mole) * 1e-06 * (gram) * (3600 * (second)) ** -1,48
+cellml_variable,joule * (coulomb) ** -1,48
+cellml_variable,liter * (0.001 * (second)) ** -1,48
+cellml_variable,(meter) ** -12 * (mole) ** 4,46
+cellml_variable,1e-06 * (farad),46
+cellml_variable,0.001 * (meter),42
+cellml_variable,second * ampere * (mole) ** -1,42
+cellml_variable,1e-09 * (mole) * (0.01 * (meter)) ** -2,40
+cellml_variable,(1e-12 * (second)) ** -1 * mole,39
+cellml_variable,liter * (farad) ** -1 * (0.001 * (second)) ** -1,38
+cellml_variable,farad,37
+cellml_variable,(1e-12 * (meter)) ** 3,36
+cellml_variable,1e+06 * (pascal),36
+cellml_variable,(1e-06 * (meter)) ** -1,35
+cellml_variable,(1e-09 * (mole) * (liter) ** -1) ** -1 * (60 * (second)) ** -1,35
+cellml_variable,0.001 * (joule) * (kelvin) ** -1 * (mole) ** -1,35
+cellml_variable,0.001 * (mole * (liter) ** -1),35
+cellml_variable,1e-15 * (ampere),35
+cellml_variable,(1e-06 * (mole) * (liter) ** -1) ** -1 * (second) ** -1,34
+cellml_variable,(1e-09 * (mole) * (liter) ** -1) ** -1 * (3600 * (second)) ** -1,33
+cellml_variable,0.001 * (siemens) * (0.01 * (meter)) ** -2,33
+cellml_variable,dimensionless * (1e-06 * (liter)) ** -1,33
+cellml_variable,1000 * (joule) * (mole) ** -1,32
+cellml_variable,1e+09 * (pascal) * second * (meter) ** -1,32
+cellml_variable,1e-09 * (coulomb) * (1e-09 * (mole)) ** -1,32
+cellml_variable,1e-12 * (gram) * (0.001 * (liter)) ** -1,32
+cellml_variable,(1e-09 * (meter)) ** -9 * (mole) ** 3,31
+cellml_variable,1e-06 * (mole) * (liter) ** -1 * (3600 * (second)) ** -1,31
+cellml_variable,liter * (second) ** -1 * (joule * (liter) ** -1) ** -1,31
+cellml_variable,(0.001 * (meter)) ** 2,30
+cellml_variable,(mole) ** -1,30
+cellml_variable,(second) ** -1 * 0.001 * (mole) * (liter) ** -1,30
+cellml_variable,0.001 * (siemens) * (0.001 * (meter)) ** -2,30
+cellml_variable,0.01 * (meter),30
+cellml_variable,(1e-09 * (mole)) ** -1 * 1e-06 * (coulomb),28
+cellml_variable,(second) ** -5,28
+cellml_variable,1e-09 * (mole) * (liter) ** -1 * (60 * (second)) ** -1,28
+cellml_variable,joule,28
+cellml_variable,meter,28
+cellml_variable,1e-09 * (mole) * (0.001 * (meter)) ** -3 * (0.001 * (second)) ** -1,27
+cellml_variable,1e-12 * (joule) * (1e-09 * (mole)) ** -1 * (kelvin) ** -1,27
+cellml_variable,(meter) ** 3 * (second) ** -1,26
+cellml_variable,(mole) ** -1 * joule,26
+cellml_variable,joule * (kelvin) ** -1 * (1000 * (mole)) ** -1,26
+cellml_variable,C_per_mol,25
+cellml_variable,per_ms,25
+cellml_variable,1e-06 * (ampere) * (0.01 * (meter)) ** -2,24
+cellml_variable,meter * (second) ** -1,24
+cellml_variable,1e-12 * (liter),23
+cellml_variable,J_per_K_per_mol,23
+cellml_variable,(0.001 * (mole) * (liter) ** -1) ** -2 * (0.001 * (second)) ** -1,22
+cellml_variable,1e-12 * (mole) * 1e-06 * (gram),22
+cellml_variable,(mole) ** -1 * coulomb,21
+cellml_variable,1e-06 * (mole) * (liter) ** -1 * (60 * (second)) ** -1,21
+cellml_variable,1e-06 * (newton),21
+cellml_variable,dimensionless * (3600 * (second)) ** -1,21
+cellml_variable,minute,21
+cellml_variable,mole * (0.001 * (mole) * (liter) ** -1) ** -1,21
+cellml_variable,mole * (0.001 * (second)) ** -1,21
+cellml_variable,(1e-06 * (mole) * (liter) ** -1) ** -1 * (0.001 * (second)) ** -1,20
+cellml_variable,(1e-06 * (mole)) ** -1 * liter * (second) ** -1,20
+cellml_variable,(1e-09 * (mole) * (liter) ** -1) ** -1 * (second) ** -1,20
+cellml_variable,1e-06 * (farad) * mole * (coulomb) ** -1,20
+cellml_variable,1e-09 * (joule) * (dimensionless) ** -1,20
+cellml_variable,mmHg,19
+cellml_variable,(0.01 * (meter)) ** 2 * (1e-06 * (liter)) ** -1,17
+cellml_variable,(1e-12 * (gram)) ** -1 * (meter) ** -2 * (second) ** 3 * (ampere) ** 2,17
+cellml_variable,(meter) ** -9 * (mole) ** 3,17
+cellml_variable,1000 * (second) * ampere * (mole) ** -1,17
+cellml_variable,liter * (farad) ** -1 * (second) ** -1,17
+cellml_variable,(0.001 * (mole) * (liter) ** -1) ** -2 * (second) ** -1,16
+cellml_variable,(1000 * (meter)) ** 6 * (second) ** -1 * (mole) ** -2,16
+cellml_variable,(100000 * (meter)) ** -1 * (second) ** -1 * (ampere) ** -1 * mole,16
+cellml_variable,(mole * (liter) ** -1) ** -2 * (second) ** -1,16
+cellml_variable,(second) ** -1 * (0.001 * (mole) * (liter) ** -1) ** -1,16
+cellml_variable,(second) ** -1 * volt,16
+cellml_variable,1000 * (joule) * (mole) ** -1 * (kelvin) ** -1,16
+cellml_variable,1000 * (pascal) * second,16
+cellml_variable,1e+09 * (pascal) * (second) ** 2 * (meter) ** -1,16
+cellml_variable,1e-06 * (liter) * (86400 * (second)) ** -1,16
+cellml_variable,1e-09 * (ampere) * (0.001 * (mole) * (liter) ** -1) ** -1,16
+cellml_variable,1e-09 * (mole) * (0.01 * (meter)) ** -2 * (0.001 * (second)) ** -1,16
+cellml_variable,liter * (mole) ** -1,16
+cellml_variable,pascal,16
+cellml_variable,siemens * (farad) ** -1,16
+cellml_variable,((1e-06 * (meter)) ** 3) ** -1,15
+cellml_variable,(1e-12 * (meter)) ** 2,15
+cellml_variable,(0.001 * (liter) * (second) ** -1) ** -1,14
+cellml_variable,(0.001 * (liter)) ** -1,14
+cellml_variable,(0.01 * (gram)) ** -1 * (meter) ** -4 * (second) ** 3 * (ampere) ** 2,14
+cellml_variable,(1e-06 * (meter)) ** -6 * (mole) ** 2,14
+cellml_variable,(1e-12 * (mole) * (liter) ** -1) ** -1 * (86400 * (second)) ** -1,14
+cellml_variable,(meter) ** -6 * (mole) ** 2,14
+cellml_variable,0.001 * (joule) * (mole) ** -1 * (kelvin) ** -1,14
+cellml_variable,133.32 * (pascal) * (0.001 * (liter)) ** -1,14
+cellml_variable,133.32 * (pascal) * (0.001 * (liter)) ** -1 * (second) ** 2,14
+cellml_variable,1e-09 * (farad),14
+cellml_variable,1e-12 * (gram) * (0.001 * (liter)) ** -1 * (3600 * (second)) ** -1,14
+cellml_variable,gram * (meter) ** 2 * (second) ** -2 * (kelvin) ** -1 * (mole) ** -1,14
+cellml_variable,(0.001 * (mole) * (liter) ** -1) ** -1,13
+cellml_variable,1e-12 * (ampere) * (0.001 * (mole) * (liter) ** -1) ** -1,13
+cellml_variable,3600 * (second),13
+cellml_variable,(1e+06 * (meter)) ** 3 * (second) ** -1 * (mole) ** -1,12
+cellml_variable,(1e-18 * (meter)) ** -18 * (mole) ** 6,12
+cellml_variable,0.001 * (ampere) * (0.01 * (meter)) ** -2,12
+cellml_variable,0.001 * (meter) * (0.001 * (second)) ** -1,12
+cellml_variable,0.001 * (mole) * (liter) ** -1 * 1e-06 * (meter),12
+cellml_variable,1e-09 * ((mole) ** 2 * (joule) ** -1 * (second) ** -1 * (dimensionless) ** -1),12
+cellml_variable,gram * (0.01 * (meter)) ** -3,12
+cellml_variable,joule * (kelvin) ** -1 * (mole) ** -1,12
+cellml_variable,(1e-09 * (gram)) ** -1 * (meter) ** -2 * (second) ** 3 * (ampere) ** 2,11
+cellml_variable,133.32 * (pascal) * (second) ** -1,11
+cellml_variable,(0.0001 * (meter)) ** 2 * (second) ** -1 * (ampere) ** -1 * mole,10
+cellml_variable,(meter) ** -3 * (second) ** -1 * mole,10
+cellml_variable,0.001 * (liter) * (0.001 * (liter)) ** -1,10
+cellml_variable,1e-06 * (meter) * (0.001 * (second)) ** -1,10
+cellml_variable,1e-12 * (siemens),10
+cellml_variable,metre,10
+cellml_variable,mole * (meter) ** -3,10
+cellml_variable,per_mol,10
+cellml_variable,(1e-06 * (mole) * (liter) ** -1) ** -2 * (second) ** -1,9
+cellml_variable,1e-06 * (siemens) * (1e-12 * (farad)) ** -1,9
+cellml_variable,1e-15 * (farad),9
+cellml_variable,L_per_minute,9
+cellml_variable,gram * (meter) ** 5 * (second) ** -5 * (ampere) ** -2,9
+cellml_variable,mM,9
+cellml_variable,mmHg_minute_per_L,9
+cellml_variable,(0.01 * (meter)) ** 2 * (second) ** -1,8
+cellml_variable,(1000 * (meter)) ** 3 * (mole) ** -1,8
+cellml_variable,(1e-06 * (meter)) ** 2 * (second) ** -1,8
+cellml_variable,(1e-15 * (meter)) ** -15 * (mole) ** 5,8
+cellml_variable,(gram) ** -1 * (meter) ** -2 * (second) ** 4 * (ampere) ** 2 * (mole) ** -1,8
+cellml_variable,(liter) ** -1 * 0.001 * (mole),8
+cellml_variable,0.01 * (meter) * (second) ** -1 * (0.001 * (mole) * (liter) ** -1) ** -1,8
+cellml_variable,0.1 * (meter),8
+cellml_variable,1e-09 * (joule) * (1e-09 * (mole)) ** -1 * (kelvin) ** -1,8
+cellml_variable,1e-15 * (coulomb),8
+cellml_variable,joule * second * (coulomb) ** -2,8
+cellml_variable,(0.001 * (mole) * (liter) ** -1) ** -1 * 1e-09 * (ampere),7
+cellml_variable,(0.001 * (mole) * (liter) ** -1) ** 2,7
+cellml_variable,(0.001 * (second)) ** -3,7
+cellml_variable,(1e-06 * (mole) * (liter) ** -1) ** -3 * (0.001 * (second)) ** -1,7
+cellml_variable,(1e-06 * (mole) * (liter) ** -1) ** -4 * (0.001 * (second)) ** -1,7
+cellml_variable,(meter) ** 3 * (second) ** -1 * (mole) ** -1,7
+cellml_variable,(second) ** -1 * 1e-06 * (mole) * (liter) ** -1,7
+cellml_variable,0.001 * (mole) * (liter) ** -1 * (0.001 * (second)) ** -1 * (0.001 * (volt)) ** -1,7
+cellml_variable,0.001 * (mole) * (liter) ** -1 * (1e-09 * (mole) * (liter) ** -1) ** -1,7
+cellml_variable,coulomb * (second) ** -1,7
+cellml_variable,joule * (meter) ** -1,7
+cellml_variable,nS_per_pF,7
+cellml_variable,(1e+06 * (pascal)) ** -1,6
+cellml_variable,(1e-09 * (meter)) ** 2 * (second) ** -1,6
+cellml_variable,(1e-09 * (meter)) ** 3 * (second) ** -1,6
+cellml_variable,(1e-12 * (meter)) ** 3 * (second) ** -1,6
+cellml_variable,(1e-15 * (meter)) ** 3 * (second) ** -1,6
+cellml_variable,(dimensionless) ** -1 * (3600 * (second)) ** -1,6
+cellml_variable,(gram) ** -1 * (meter) ** -5 * (second) ** 3 * ampere * mole,6
+cellml_variable,(mole * (liter) ** -1) ** 2,6
+cellml_variable,1e-06 * (liter) * (dimensionless) ** -1 * (86400 * (second)) ** -1,6
+cellml_variable,1e-09 * (gram) * (0.001 * (liter)) ** -1,6
+cellml_variable,L_per_minute_per_mmHg,6
+cellml_variable,coulomb,6
+cellml_variable,mM4,6
+cellml_variable,mM_per_s,6
+cellml_variable,monovalent_mEq_per_minute,6
+cellml_variable,per_mmHg,6
+cellml_variable,(0.0001 * (meter)) ** 2,5
+cellml_variable,(0.001 * (meter)) ** -1,5
+cellml_variable,(1e-09 * (mole) * (0.001 * (meter)) ** -3) ** -1 * (0.001 * (second)) ** -1,5
+cellml_variable,(1e-12 * (meter)) ** -12 * (mole) ** 4,5
+cellml_variable,(coulomb) ** -1 * mole,5
+cellml_variable,(coulomb) ** 2 * (joule) ** -1,5
+cellml_variable,(hour) ** -1,5
+cellml_variable,(kelvin) ** -1,5
+cellml_variable,1000 * (gram) * (meter) ** 2 * (second) ** -2 * (kelvin) ** -1 * (mole) ** -1,5
+cellml_variable,1e-06 * (farad) * (0.001 * (meter)) ** -2,5
+cellml_variable,1e-09 * (mole) * (liter) ** -1 * (hour) ** -1,5
+cellml_variable,1e-12 * (ampere) * (0.001 * (volt)) ** -1,5
+cellml_variable,60 * (second),5
+cellml_variable,mV,5
+cellml_variable,siemens * (0.01 * (meter)) ** -2,5
+cellml_variable,(0.001 * (mole) * (liter) ** -1) ** -2,4
+cellml_variable,(0.01 * (meter)) ** -14 * ampere * (mole) ** 4,4
+cellml_variable,(133.32 * (pascal)) ** -1,4
+cellml_variable,(1e-06 * (liter)) ** -1 * (86400 * (second)) ** -1,4
+cellml_variable,(1e-06 * (meter)) ** 2,4
+cellml_variable,(1e-06 * (mole) * (liter) ** -1) ** -1 * (3600 * (second)) ** -1,4
+cellml_variable,(1e-06 * (mole)) ** 2,4
+cellml_variable,(1e-12 * (meter)) ** 2 * (second) ** -1,4
+cellml_variable,(1e-12 * (mole) * 1e-06 * (gram)) ** -1 * (3600 * (second)) ** -1,4
+cellml_variable,(gram) ** 4 * (meter) ** 8 * (second) ** -12 * (ampere) ** -4,4
+cellml_variable,(meter) ** 3 * (second) ** -1 * (pascal) ** -1,4
+cellml_variable,(meter) ** 6 * (second) ** -1 * (mole) ** -2,4
+cellml_variable,(mole) ** -1 * joule * (kelvin) ** -1,4
+cellml_variable,(second) ** 2,4
+cellml_variable,1e+09 * (ohm),4
+cellml_variable,1e-06 * (farad) * ((0.01 * (meter)) ** 2) ** -1,4
+cellml_variable,coulomb * (mole) ** -1 * (0.001 * (volt)) ** -1,4
+cellml_variable,gram,4
+cellml_variable,joule * (second) ** 2 * (coulomb) ** -2,4
+cellml_variable,joule * second * (meter) ** -2,4
+cellml_variable,meter * (second) ** -2,4
+cellml_variable,mole * (second) ** -1 * (133.32 * (pascal)) ** -1,4
+cellml_variable,newton * ((0.001 * (meter)) ** 2) ** -1,4
+cellml_variable,newton * (0.001 * (meter)) ** -2,4
+cellml_variable,per_minute,4
+cellml_variable,watt,4
+cellml_variable,((meter) ** 3 * (second) ** -1 * (pascal) ** -1) ** -1,3
+cellml_variable,(0.001 * (mole) * (liter) ** -1) ** 3,3
+cellml_variable,(coulomb) ** -1 * 0.001 * (mole),3
+cellml_variable,(liter) ** -1 * 1e-06 * (mole) * (second) ** -1,3
+cellml_variable,(meter) ** -3 * coulomb,3
+cellml_variable,(second) ** -1 * (volt) ** -1,3
+cellml_variable,0.001 * (mole) * (mole) ** -1,3
+cellml_variable,1e-06 * (liter) * (second) ** -1,3
+cellml_variable,86400 * (second),3
+cellml_variable,coulomb * (joule) ** -1 * (second) ** -1,3
+cellml_variable,coulomb * (second) ** -2,3
+cellml_variable,dimensionless * (1e-06 * (liter)) ** -1 * (86400 * (second)) ** -1,3
+cellml_variable,joule * (meter) ** -2,3
+cellml_variable,joule * (second) ** 2 * (meter) ** -2,3
+cellml_variable,mole * (meter) ** -2 * (second) ** -1,3
+cellml_variable,(0.001 * (mole) * (liter) ** -1) ** -1 * (60 * (second)) ** -1,2
+cellml_variable,(0.01 * (meter)) ** -1,2
+cellml_variable,(1000 * (gram)) ** -1 * (meter) ** -2 * (second) ** 4 * (ampere) ** 2 * (mole) ** -1,2
+cellml_variable,(133.322 * (newton) * (meter) ** -2) ** -1,2
+cellml_variable,(1e-06 * (mole) * (liter) ** -1) ** -1,2
+cellml_variable,(1e-06 * (mole) * (liter) ** -1) ** -3 * (second) ** -1,2
+cellml_variable,(1e-06 * (mole) * (liter) ** -1) ** 2,2
+cellml_variable,(1e-09 * (meter)) ** 3 * ampere * (mole) ** -1,2
+cellml_variable,(1e-09 * (mole) * (0.001 * (meter)) ** -3) ** -3 * (0.001 * (second)) ** -1,2
+cellml_variable,(1e-09 * (mole) * (0.001 * (meter)) ** -3) ** -4 * (0.001 * (second)) ** -1,2
+cellml_variable,(1e-09 * (mole) * (liter) ** -1) ** -0.2,2
+cellml_variable,(1e-09 * (mole) * (liter) ** -1) ** -1,2
+cellml_variable,(1e-09 * (mole) * (liter) ** -1) ** -2,2
+cellml_variable,(1e-09 * (mole) * (liter) ** -1) ** 0.1,2
+cellml_variable,(1e-09 * (mole) * (liter) ** -1) ** 0.8 * (3600 * (second)) ** -1,2
+cellml_variable,(1e-09 * (mole) * (liter) ** -1) ** 2.2,2
+cellml_variable,(1e-09 * (mole) * (liter) ** -1) ** 4.5,2
+cellml_variable,(1e-12 * (ampere)) ** 2.5,2
+cellml_variable,(1e-12 * (gram)) ** -1 * (meter) ** -2 * (second) ** 4 * (ampere) ** 2,2
+cellml_variable,(1e-12 * (meter)) ** 12 * ampere * (mole) ** -4,2
+cellml_variable,(3600 * (second)) ** -2,2
+cellml_variable,(3600 * (second)) ** -4,2
+cellml_variable,(dimensionless) ** -1,2
+cellml_variable,(dimensionless) ** -1 * (second) ** -1,2
+cellml_variable,(hertz) ** 1.9,2
+cellml_variable,(meter) ** 12 * (mole) ** -4,2
+cellml_variable,(meter) ** 3 * (farad) ** -1 * (second) ** -1,2
+cellml_variable,(mole * (liter) ** -1) ** -2 * (second) ** -5,2
+cellml_variable,(mole * (liter) ** -1) ** -3 * (second) ** -5,2
+cellml_variable,(mole * (liter) ** -1) ** 2 * (second) ** -1,2
+cellml_variable,(mole * (liter) ** -1) ** 3,2
+cellml_variable,(mole * (liter) ** -1) ** 3 * (second) ** -1,2
+cellml_variable,(mole) ** -1 * (second) ** -1,2
+cellml_variable,(mole) ** -3,2
+cellml_variable,(mole) ** -3 * (second) ** -1,2
+cellml_variable,0.001 * (liter) * (60 * (second)) ** -1,2
+cellml_variable,0.001 * (mole),2
+cellml_variable,0.001 * (mole) * (liter) ** -1 * (0.001 * (volt)) ** -1,2
+cellml_variable,0.001 * (mole) * (liter) ** -1 * (0.001 * (volt)) ** -1 * (0.001 * (second)) ** -1,2
+cellml_variable,0.001 * (ohm),2
+cellml_variable,1000 * (gram) * (mole) ** -1,2
+cellml_variable,133.32 * (pascal) * second * (liter) ** -1,2
+cellml_variable,133.322 * (newton) * (meter) ** -2,2
+cellml_variable,1e-06 * (ampere) * (1e-06 * (farad)) ** -1 * (0.001 * (mole) * (liter) ** -1) ** 4,2
+cellml_variable,1e-06 * (mole) * (second) ** -1,2
+cellml_variable,1e-09 * (gram) * (0.001 * (liter)) ** -1 * (3600 * (second)) ** -1,2
+cellml_variable,1e-09 * (joule) * (second) ** -1,2
+cellml_variable,1e-12 * (farad) * (0.01 * (meter)) ** -2,2
+cellml_variable,J_per_mol_per_kelvin,2
+cellml_variable,dimensionless * (mole) ** -1 * second,2
+cellml_variable,farad * mole * (liter) ** -1 * (coulomb) ** -1,2
+cellml_variable,gram_per_L,2
+cellml_variable,it_per_s,2
+cellml_variable,joule * (coulomb) ** -2,2
+cellml_variable,joule * (second) ** 2 * (meter) ** -5,2
+cellml_variable,joule * second * (coulomb) ** -1 * (meter) ** -1,2
+cellml_variable,mL,2
+cellml_variable,mL_per_minute,2
+cellml_variable,mM3,2
+cellml_variable,mV_per_uM,2
+cellml_variable,mole * (liter) ** -1 * (133.32 * (pascal)) ** -1,2
+cellml_variable,monovalent_mEq,2
+cellml_variable,monovalent_mEq_per_litre,2
+cellml_variable,newton,2
+cellml_variable,ohm * 0.01 * (meter),2
+cellml_variable,pascal * second,2
+cellml_variable,per_mmHg2,2
+cellml_variable,radian,2
+cellml_variable,uM_per_ms,2
+cellml_variable,(0.001 * (mole) * (liter) ** -1) ** -1 * 1e-06 * (siemens),1
+cellml_variable,(0.001 * (mole) * (liter) ** -1) ** -3 * (second) ** -1,1
+cellml_variable,(0.001 * (mole) * (liter) ** -1) ** -4 * (second) ** -1,1
+cellml_variable,(1e+12 * (meter)) ** 9 * (second) ** -1 * (mole) ** -3,1
+cellml_variable,(1e+15 * (meter)) ** 12 * (second) ** -1 * (mole) ** -4,1
+cellml_variable,(1e-06 * (mole) * (liter) ** -1) ** -1 * (60 * (second)) ** -1,1
+cellml_variable,(1e-06 * (mole) * (liter) ** -1) ** -3 * (60 * (second)) ** -1,1
+cellml_variable,(1e-06 * (mole)) ** -2 * (liter) ** -1,1
+cellml_variable,(1e-09 * (gram)) ** -1 * (meter) ** -2 * (second) ** 4 * (ampere) ** 2,1
+cellml_variable,(1e-09 * (mole) * (liter) ** -1) ** -1 * (hour) ** -1,1
+cellml_variable,(1e-12 * (meter)) ** 3 * ampere * (mole) ** -1,1
+cellml_variable,(1e-15 * (mole)) ** -1 * mole,1
+cellml_variable,(joule) ** 2 * (meter) ** -4,1
+cellml_variable,(kelvin) ** -1 * joule * (1000 * (mole)) ** -1,1
+cellml_variable,(meter) ** -1,1
+cellml_variable,(meter) ** 2 * (joule) ** -1,1
+cellml_variable,(meter) ** 9 * (mole) ** -3,1
+cellml_variable,(newton * ((0.001 * (meter)) ** 2) ** -1) ** -1,1
+cellml_variable,(second) ** -1 * 1e-09 * (mole) * (liter) ** -1,1
+cellml_variable,0.001 * (farad),1
+cellml_variable,0.001 * (farad) * (0.01 * (meter)) ** -2,1
+cellml_variable,0.001 * (liter) * (0.001 * (liter)) ** -1 * (60 * (second)) ** -1 * (133.32 * (pascal)) ** -1,1
+cellml_variable,0.001 * (mole) * (liter) ** -1 * (1e-06 * (ampere) * (1e-06 * (farad)) ** -1) ** -1 * (0.001 * (second)) ** -1,1
+cellml_variable,0.001 * (mole) * (liter) ** -1 * (1e-06 * (ampere) * (1e-06 * (farad)) ** -1) ** -1 * (0.001 * (second)) ** -1 * (0.001 * (second)) ** -1,1
+cellml_variable,0.001 * (volt) * (0.001 * (second)) ** -1,1
+cellml_variable,1000 * (second),1
+cellml_variable,1e-06 * (mole) * (liter) ** -1 * (coulomb) ** -1 * (0.01 * (meter)) ** -1,1
+cellml_variable,1e-09 * (coulomb) * (dimensionless) ** -1,1
+cellml_variable,1e-09 * (farad) * coulomb * (second) ** -1 * (ampere) ** -1 * (0.01 * (meter)) ** -2,1
+cellml_variable,1e-09 * (joule) * (1e-09 * (coulomb)) ** -1,1
+cellml_variable,1e-12 * (ampere) * 0.001 * (second),1
+cellml_variable,L_mL_per_minute_per_mmHg,1
+cellml_variable,L_mmHg_per_gram,1
+cellml_variable,L_per_mmHg,1
+cellml_variable,ampere,1
+cellml_variable,ampere * second * liter * (farad) ** -1 * (meter) ** -1 * (coulomb) ** -1,1
+cellml_variable,dimensionless * (1e-06 * (meter)) ** -1,1
+cellml_variable,dimensionless * (1e-06 * (mole) * (liter) ** -1) ** -1,1
+cellml_variable,dimensionless * (mole) ** -1,1
+cellml_variable,dimensionless * 0.001 * (second),1
+cellml_variable,gram_per_minute,1
+cellml_variable,joule * (mole) ** -3 * (kelvin) ** -1,1
+cellml_variable,kJ_per_mol,1
+cellml_variable,kPa,1
+cellml_variable,kilogram,1
+cellml_variable,kilogram * (meter) ** -3,1
+cellml_variable,liter * (second) ** -1 * (mole) ** -1,1
+cellml_variable,litre2_per_monovalent_mEq_per_minute,1
+cellml_variable,mL_per_L,1
+cellml_variable,mOsm,1
+cellml_variable,mOsm_per_minute,1
+cellml_variable,mV_ms,1
+cellml_variable,minute_per_L,1
+cellml_variable,mmHg_per_mL,1
+cellml_variable,newton * ((0.001 * (meter)) ** 2) ** -1 * (second) ** -1,1
+cellml_variable,per_mmHg_per_minute,1
+cellml_variable,radian * (second) ** -1,1
+cellml_variable,uM,1
+time_unit,second,1807
+time_unit,0.001 * (second),1706
+time_unit,60 * (second),281
+time_unit,dimensionless,164
+time_unit,3600 * (second),107
+time_unit,86400 * (second),93
+time_unit,hour,2
+time_unit,minute,1
+time_unit,ms,1

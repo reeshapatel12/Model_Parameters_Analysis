@@ -1,0 +1,277 @@
+{
+  "total_records": 95705,
+  "records_with_explicit_units": 95705,
+  "records_without_units": 0,
+  "distinct_unit_strings": 455,
+  "records_by_type": {
+    "cellml_variable": 91543,
+    "time_unit": 4162
+  },
+  "units_by_type": {
+    "cellml_variable": [
+      {
+        "unit": "dimensionless",
+        "count": 40936
+      },
+      {
+        "unit": "0.001 * (mole) * (liter) ** -1",
+        "count": 6631
+      },
+      {
+        "unit": "0.001 * (volt)",
+        "count": 4764
+      },
+      {
+        "unit": "(second) ** -1",
+        "count": 2819
+      },
+      {
+        "unit": "1e-06 * (ampere) * (1e-06 * (farad)) ** -1",
+        "count": 2347
+      },
+      {
+        "unit": "(0.001 * (second)) ** -1",
+        "count": 1844
+      },
+      {
+        "unit": "0.001 * (second)",
+        "count": 1584
+      },
+      {
+        "unit": "1e-06 * (mole) * (liter) ** -1",
+        "count": 1237
+      },
+      {
+        "unit": "1e-12 * (ampere) * (1e-12 * (farad)) ** -1",
+        "count": 1193
+      },
+      {
+        "unit": "kelvin",
+        "count": 1167
+      },
+      {
+        "unit": "second",
+        "count": 1147
+      },
+      {
+        "unit": "(meter) ** -3 * mole",
+        "count": 1091
+      },
+      {
+        "unit": "1e-09 * (ampere)",
+        "count": 1005
+      },
+      {
+        "unit": "(60 * (second)) ** -1",
+        "count": 987
+      },
+      {
+        "unit": "0.001 * (mole) * (liter) ** -1 * (0.001 * (second)) ** -1",
+        "count": 789
+      },
+      {
+        "unit": "1e-09 * (mole) * (liter) ** -1",
+        "count": 766
+      },
+      {
+        "unit": "(1000 * (second)) ** -1",
+        "count": 701
+      },
+      {
+        "unit": "(0.001 * (meter)) ** -3 * mole",
+        "count": 664
+      },
+      {
+        "unit": "coulomb * (mole) ** -1",
+        "count": 650
+      },
+      {
+        "unit": "gram * (meter) ** 2 * (second) ** -3 * (ampere) ** -1",
+        "count": 570
+      }
+    ],
+    "time_unit": [
+      {
+        "unit": "second",
+        "count": 1807
+      },
+      {
+        "unit": "0.001 * (second)",
+        "count": 1706
+      },
+      {
+        "unit": "60 * (second)",
+        "count": 281
+      },
+      {
+        "unit": "dimensionless",
+        "count": 164
+      },
+      {
+        "unit": "3600 * (second)",
+        "count": 107
+      },
+      {
+        "unit": "86400 * (second)",
+        "count": 93
+      },
+      {
+        "unit": "hour",
+        "count": 2
+      },
+      {
+        "unit": "minute",
+        "count": 1
+      },
+      {
+        "unit": "ms",
+        "count": 1
+      }
+    ]
+  },
+  "default_unit_by_dimension": {
+    "dimensionless": "dimensionless",
+    "[mass] * [length] / [time] ** 2": "1e-06 * (newton)",
+    "[temperature]": "kelvin",
+    "[substance] / [length] ** 3": "0.001 * (mole) * (liter) ** -1",
+    "[time]": "0.001 * (second)",
+    "[mass] / [length] / [time] ** 2": "133.32 * (pascal)",
+    "[mass] * [length] ** 2 / [time] ** 3 / [current]": "0.001 * (volt)",
+    "[mass] * [length] ** 2 / [time] ** 2 / [substance] / [temperature]": "joule * (1000 * (mole)) ** -1 * (kelvin) ** -1",
+    "[current] * [time] / [substance]": "coulomb * (mole) ** -1",
+    "[length]": "1e-06 * (meter)",
+    "[length] ** 3": "litre",
+    "[length] ** 2": "(0.01 * (meter)) ** 2",
+    "[mass] * [length] ** 2 / [current] / [time] ** 4": "1e-06 * (ampere) * (1e-06 * (farad)) ** -1",
+    "[length] ** 3 / [substance] / [time]": "(0.001 * (mole) * (liter) ** -1) ** -1 * (0.001 * (second)) ** -1",
+    "1 / [time]": "(second) ** -1",
+    "[substance] / [length] ** 3 / [time]": "0.001 * (mole) * (liter) ** -1 * (0.001 * (second)) ** -1",
+    "[current] ** 2 * [time] ** 4 / [mass] / [length] ** 4": "1e-06 * (farad) * (0.01 * (meter)) ** -2",
+    "[substance] * [mass] / [time]": "1e-12 * (mole) * 1e-06 * (gram) * (3600 * (second)) ** -1",
+    "1 / [substance] / [mass] / [time]": "(1e-12 * (mole) * 1e-06 * (gram)) ** -1 * (3600 * (second)) ** -1",
+    "[substance] * [mass]": "1e-12 * (mole) * 1e-06 * (gram)",
+    "[length] / [time]": "0.01 * (meter) * (second) ** -1",
+    "[mass] / [length] ** 3": "1e-12 * (gram) * (0.001 * (liter)) ** -1",
+    "[mass] / [length] / [time]": "1000 * (pascal) * second",
+    "[length] ** 4 * [time] / [mass]": "liter * (second) ** -1 * (joule * (liter) ** -1) ** -1",
+    "[mass] / [length] ** 4 / [time]": "joule * (liter) ** -1 * (liter * (second) ** -1) ** -1",
+    "[length] ** 3 / [time]": "liter * (second) ** -1",
+    "1 / [length]": "(1e-06 * (meter)) ** -1",
+    "[current] ** 2 * [time] ** 4 / [mass] / [length] ** 2": "1e-12 * (farad)",
+    "[current]": "1e-09 * (ampere)",
+    "[current] * [length] ** 3 / [substance]": "1e-09 * (ampere) * (0.001 * (mole) * (liter) ** -1) ** -1",
+    "[current] ** 2 * [time] ** 3 / [mass] / [length] ** 2": "1e-09 * (siemens)",
+    "[current] * [time]": "1e-15 * (coulomb)",
+    "[substance] ** 4 / [length] ** 12": "(0.001 * (mole) * (liter) ** -1) ** 4",
+    "[substance] / [length] ** 2 / [time]": "1e-12 * (mole) * (0.01 * (meter)) ** -2 * (0.001 * (second)) ** -1",
+    "[substance]": "1e-15 * (mole)",
+    "[length] ** 6 / [substance] ** 2 / [time]": "(0.001 * (mole) * (liter) ** -1) ** -2 * (0.001 * (second)) ** -1",
+    "[length] ** 9 / [substance] ** 3 / [time]": "(1e-06 * (mole) * (liter) ** -1) ** -3 * (0.001 * (second)) ** -1",
+    "[mass] / [length] / [time] ** 3": "133.32 * (pascal) * (second) ** -1",
+    "[substance] * [time] * [length] / [mass]": "mole * (second) ** -1 * (133.32 * (pascal)) ** -1",
+    "[length] ** 3 / [substance]": "liter * (mole) ** -1",
+    "[substance] * [time] ** 2 / [length] ** 2 / [mass]": "mole * (liter) ** -1 * (133.32 * (pascal)) ** -1",
+    "[time] ** 3 * [current] / [mass] / [length] ** 2": "(0.001 * (volt)) ** -1",
+    "[current] * [time] ** 3 * [substance] / [mass] / [length] ** 2": "1e-06 * (farad) * mole * (coulomb) ** -1",
+    "[length] ** 5 * [mass] / [current] ** 2 / [time] ** 5": "liter * (farad) ** -1 * (0.001 * (second)) ** -1",
+    "[substance] / [current] / [time]": "(coulomb) ** -1 * mole",
+    "[mass] * [length] ** 3 / [time] ** 3 / [current] ** 2": "ohm * 0.01 * (meter)",
+    "[mass] * [length] ** 2 / [time] ** 2 / [substance]": "joule * (mole) ** -1",
+    "[mass] * [length] ** 2 / [time] ** 2": "joule",
+    "[substance] / [time]": "1e-15 * (mole) * (second) ** -1",
+    "[substance] ** 2 / [length] ** 6": "(1e-06 * (meter)) ** -6 * (mole) ** 2",
+    "[current] * [time] ** 2 / [mass] / [length] ** 2": "coulomb * (joule) ** -1 * (second) ** -1",
+    "[time] ** 2 * [current] / [mass] / [length] ** 2": "(second) ** -1 * (volt) ** -1",
+    "[mass] * [length] ** 2 / [time] ** 4 / [current] ** 2": "joule * (coulomb) ** -2",
+    "[mass] / [time] ** 2": "joule * (meter) ** -2",
+    "[mass] * [length] ** 2 / [time] ** 3 / [current] ** 2": "joule * second * (coulomb) ** -2",
+    "[mass] / [time]": "joule * second * (meter) ** -2",
+    "[mass] * [length] ** 2 / [time] ** 2 / [current] ** 2": "joule * (second) ** 2 * (coulomb) ** -2",
+    "[mass]": "gram",
+    "[mass] * [length] / [time] ** 2 / [current]": "joule * second * (coulomb) ** -1 * (meter) ** -1",
+    "[mass] ** 2 / [time] ** 4": "(joule) ** 2 * (meter) ** -4",
+    "1 / [substance]": "(1e-15 * (mole)) ** -1",
+    "1 / [substance] / [length] ** 3": "(1e-06 * (mole)) ** -1 * (liter) ** -1",
+    "1 / [substance] ** 2 / [length] ** 3": "(1e-06 * (mole)) ** -2 * (liter) ** -1",
+    "[length] * [time] ** 2 / [mass]": "(1e+06 * (pascal)) ** -1",
+    "[time] / [substance]": "dimensionless * (mole) ** -1 * second",
+    "[length] ** 12 / [substance] ** 4 / [time]": "(1e-06 * (mole) * (liter) ** -1) ** -4 * (0.001 * (second)) ** -1",
+    "[length] / [time] ** 2": "meter * (second) ** -2",
+    "[mass] / [length] ** 4 / [time] ** 2": "joule * (liter) ** -1 * (liter) ** -1",
+    "[current] * [time] / [length] ** 3": "(meter) ** -3 * coulomb",
+    "[length] ** 4 * [time] ** 2 / [mass]": "0.001 * (liter) * (133.32 * (pascal)) ** -1",
+    "[mass] / [length] ** 4": "133.32 * (pascal) * (0.001 * (liter)) ** -1 * (second) ** 2",
+    "[time] / [length] ** 3": "(0.001 * (liter) * (second) ** -1) ** -1",
+    "1 / [length] ** 3": "(1e-06 * (liter)) ** -1",
+    "[time] ** 2": "(second) ** 2",
+    "[current] ** 2 * [time] ** 3 / [mass] / [length] ** 4": "1e-06 * (siemens) * (0.01 * (meter)) ** -2",
+    "[mass] * [substance] ** 4 / [current] / [time] ** 4 / [length] ** 10": "1e-06 * (ampere) * (1e-06 * (farad)) ** -1 * (0.001 * (mole) * (liter) ** -1) ** 4",
+    "[substance] * [current] * [time] ** 3 / [length] ** 5 / [mass]": "0.001 * (mole) * (liter) ** -1 * (1e-06 * (ampere) * (1e-06 * (farad)) ** -1) ** -1 * (0.001 * (second)) ** -1",
+    "[substance] * [current] * [time] ** 2 / [length] ** 5 / [mass]": "0.001 * (mole) * (liter) ** -1 * (1e-06 * (ampere) * (1e-06 * (farad)) ** -1) ** -1 * (0.001 * (second)) ** -1 * (0.001 * (second)) ** -1",
+    "1 / [time] ** 5": "(second) ** -5",
+    "[length] ** 9 / [substance] ** 3 / [time] ** 5": "(mole * (liter) ** -1) ** -3 * (second) ** -5",
+    "[substance] ** 3 / [length] ** 9": "(1e-09 * (meter)) ** -9 * (mole) ** 3",
+    "[substance] ** 3 / [length] ** 9 / [time]": "(mole * (liter) ** -1) ** 3 * (second) ** -1",
+    "[substance] * [time] ** 2 * [current] / [length] ** 5 / [mass]": "0.001 * (mole) * (liter) ** -1 * (0.001 * (second)) ** -1 * (0.001 * (volt)) ** -1",
+    "[substance] * [time] ** 3 * [current] / [length] ** 5 / [mass]": "0.001 * (mole) * (liter) ** -1 * (0.001 * (volt)) ** -1",
+    "[mass] / [length] ** 3 / [time]": "1e-12 * (gram) * (0.001 * (liter)) ** -1 * (3600 * (second)) ** -1",
+    "1 / [substance] / [time]": "(mole) ** -1 * (second) ** -1",
+    "1 / [substance] ** 3 / [time]": "(mole) ** -3 * (second) ** -1",
+    "1 / [substance] ** 3": "(mole) ** -3",
+    "1 / [time] ** 3": "(0.001 * (second)) ** -3",
+    "[length] ** 3 / [time] / [substance]": "(1000 * (meter)) ** 3 * (second) ** -1 * (mole) ** -1",
+    "[mass] * [length] ** 2 / [time] ** 4 / [current]": "1000 * (gram) * (meter) ** 2 * (second) ** -4 * (ampere) ** -1",
+    "[time] * [current] / [substance]": "second * ampere * (mole) ** -1",
+    "[current] / [length] ** 2": "(0.01 * (meter)) ** -2 * ampere",
+    "[mass] * [length] ** 2 / [time] ** 2 / [temperature] / [substance]": "gram * (meter) ** 2 * (second) ** -2 * (kelvin) ** -1 * (mole) ** -1",
+    "[length] ** 6 / [time] / [substance] ** 2": "(1000 * (meter)) ** 6 * (second) ** -1 * (mole) ** -2",
+    "[length] ** 2 / [time]": "(0.01 * (meter)) ** 2 * (second) ** -1",
+    "[substance] ** 2": "(1e-06 * (mole)) ** 2",
+    "[time] * [length] / [mass]": "0.001 * (liter) * (0.001 * (liter)) ** -1 * (60 * (second)) ** -1 * (133.32 * (pascal)) ** -1",
+    "[mass] / [substance]": "1000 * (gram) * (mole) ** -1",
+    "1 / [time] ** 2": "(3600 * (second)) ** -2",
+    "1 / [time] ** 4": "(3600 * (second)) ** -4",
+    "[current] * [time] ** 3 * [substance] / [mass] / [length] ** 5": "farad * mole * (liter) ** -1 * (coulomb) ** -1",
+    "[time] ** 4 * [current] ** 2 / [mass] / [length] ** 2": "(1e-15 * (gram)) ** -1 * (meter) ** -2 * (second) ** 4 * (ampere) ** 2",
+    "[time] ** 4 * [current] ** 2 / [mass] / [length] ** 2 / [substance]": "(gram) ** -1 * (meter) ** -2 * (second) ** 4 * (ampere) ** 2 * (mole) ** -1",
+    "[mass] * [length] ** 5 / [time] ** 5 / [current] ** 2": "gram * (meter) ** 5 * (second) ** -5 * (ampere) ** -2",
+    "[time] ** 3 * [current] ** 2 / [mass] / [length] ** 2": "(1e-12 * (gram)) ** -1 * (meter) ** -2 * (second) ** 3 * (ampere) ** 2",
+    "[length] ** 12 / [substance] ** 4": "(meter) ** 12 * (mole) ** -4",
+    "[length] ** 12 * [current] / [substance] ** 4": "(1e-12 * (meter)) ** 12 * ampere * (mole) ** -4",
+    "[length] ** 3 * [current] / [substance]": "(1e-09 * (meter)) ** 3 * ampere * (mole) ** -1",
+    "[length] ** 6 / [substance] ** 2 / [time] ** 5": "(mole * (liter) ** -1) ** -2 * (second) ** -5",
+    "[substance] ** 2 / [length] ** 6 / [time]": "(mole * (liter) ** -1) ** 2 * (second) ** -1",
+    "[mass] / [length] ** 2 / [time] ** 2": "1e+09 * (pascal) * (meter) ** -1",
+    "[mass] / [length] ** 2 / [time]": "1e+09 * (pascal) * second * (meter) ** -1",
+    "[mass] / [length] ** 2": "1e+09 * (pascal) * (second) ** 2 * (meter) ** -1",
+    "[substance] ** 2 * [time] / [mass] / [length] ** 2": "1e-09 * ((mole) ** 2 * (joule) ** -1 * (second) ** -1 * (dimensionless) ** -1)",
+    "[time] ** 3 * [current] * [substance] / [mass] / [length] ** 5": "(gram) ** -1 * (meter) ** -5 * (second) ** 3 * ampere * mole",
+    "[length] ** 9 / [substance] ** 3": "(meter) ** 9 * (mole) ** -3",
+    "1 / [length] ** 3 / [time]": "(1e-06 * (liter)) ** -1 * (86400 * (second)) ** -1",
+    "[mass] * [length] ** 2 / [time] ** 3": "watt",
+    "[current] ** 2 * [time] ** 4 / [substance] / [mass] / [length] ** 2": "coulomb * (mole) ** -1 * (0.001 * (volt)) ** -1",
+    "[substance] / [length] ** 2": "1e-09 * (mole) * (0.01 * (meter)) ** -2",
+    "[length] ** 4 / [time] / [substance]": "0.01 * (meter) * (second) ** -1 * (0.001 * (mole) * (liter) ** -1) ** -1",
+    "[mass] * [length] ** 2 / [time] ** 2 / [substance] ** 3 / [temperature]": "joule * (mole) ** -3 * (kelvin) ** -1",
+    "[length] ** 4 * [mass] / [current] ** 2 / [time] ** 4": "ampere * second * liter * (farad) ** -1 * (meter) ** -1 * (coulomb) ** -1",
+    "[length] * [current] ** 2 * [time] ** 3 / [substance] / [mass]": "(0.001 * (mole) * (liter) ** -1) ** -1 * 1e-06 * (siemens)",
+    "[substance] / [length] ** 4 / [current] / [time]": "1e-06 * (mole) * (liter) ** -1 * (coulomb) ** -1 * (0.01 * (meter)) ** -1",
+    "[length] ** 6 / [substance] ** 2": "(0.001 * (mole) * (liter) ** -1) ** -2",
+    "[substance] ** 5 / [length] ** 15": "(1e-15 * (meter)) ** -15 * (mole) ** 5",
+    "[length] ** 2 * [substance] / [time] / [current]": "(0.0001 * (meter)) ** 2 * (second) ** -1 * (ampere) ** -1 * mole",
+    "[substance] / [length] / [time] / [current]": "(100000 * (meter)) ** -1 * (second) ** -1 * (ampere) ** -1 * mole",
+    "[mass] ** 4 * [length] ** 8 / [time] ** 12 / [current] ** 4": "(gram) ** 4 * (meter) ** 8 * (second) ** -12 * (ampere) ** -4",
+    "[time] ** 3 * [current] ** 2 / [mass] / [length] ** 4": "(0.01 * (gram)) ** -1 * (meter) ** -4 * (second) ** 3 * (ampere) ** 2",
+    "[current] * [substance] ** 4 / [length] ** 14": "(0.01 * (meter)) ** -14 * ampere * (mole) ** 4",
+    "[current] / [time]": "coulomb * (second) ** -2",
+    "[time] ** 2 / [mass]": "(meter) ** 2 * (joule) ** -1",
+    "1 / [temperature]": "(kelvin) ** -1",
+    "[current] ** 2.5": "(1e-12 * (ampere)) ** 2.5",
+    "[length] ** 0.6 / [substance] ** 0.2": "(1e-09 * (mole) * (liter) ** -1) ** -0.2",
+    "[substance] ** 2.2 / [length] ** 6.6": "(1e-09 * (mole) * (liter) ** -1) ** 2.2",
+    "[substance] ** 0.1 / [length] ** 0.3": "(1e-09 * (mole) * (liter) ** -1) ** 0.1",
+    "[substance] ** 4.5 / [length] ** 13.5": "(1e-09 * (mole) * (liter) ** -1) ** 4.5",
+    "1 / [time] ** 1.9": "(hertz) ** 1.9",
+    "[substance] ** 0.8 / [length] ** 2.4 / [time]": "(1e-09 * (mole) * (liter) ** -1) ** 0.8 * (3600 * (second)) ** -1"
+  }
+}
