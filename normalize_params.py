@@ -5,9 +5,10 @@ import pandas as pd
 import pint
 
 ROOT = Path(__file__).resolve().parent
-RAW_DIR = ROOT / "data" / "raw"
-PROCESSED_DIR = ROOT / "data" / "processed"
-CONFIG_DIR = ROOT / "config"
+DATA_DIR = ROOT / "data" / "curated"
+RAW_DIR = DATA_DIR / "raw"
+PROCESSED_DIR = DATA_DIR / "processed"
+CONFIG_DIR = DATA_DIR / "config"
 PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
 UREG = pint.UnitRegistry(autoconvert_offset_to_baseunit=True)

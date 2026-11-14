@@ -8,9 +8,10 @@ import pandas as pd
 import pint
 
 ROOT = Path(__file__).resolve().parent
-RAW_DIR = ROOT / "data" / "raw"
-STATS_DIR = ROOT / "data" / "statistics"
-CONFIG_DIR = ROOT / "config"
+DATA_DIR = ROOT / "data" / "curated"
+RAW_DIR = DATA_DIR / "raw"
+STATS_DIR = DATA_DIR / "statistics"
+CONFIG_DIR = DATA_DIR / "config"
 STATS_DIR.mkdir(parents=True, exist_ok=True)
 
 UREG = pint.UnitRegistry(autoconvert_offset_to_baseunit=True)
