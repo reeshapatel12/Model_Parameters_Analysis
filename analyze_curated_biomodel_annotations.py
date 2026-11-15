@@ -7,8 +7,8 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data" / "curated"
-INPUT = DATA_DIR / "statistics" / "curated_biomodel_annotations.csv"
-OUTPUT = DATA_DIR / "statistics" / "curated_biomodel_annotation_statistics.csv"
+INPUT = DATA_DIR / "annotations" / "curated_biomodel_annotations.csv"
+OUTPUT = DATA_DIR / "annotations" / "curated_biomodel_annotation_statistics.csv"
 TERM_COLUMNS = ("go", "taxonomy", "mamo")
 
 

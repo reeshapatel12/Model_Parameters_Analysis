@@ -21,7 +21,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 ROOT = Path(__file__).resolve().parent
-OUTPUT = ROOT / "data" / "curated" / "statistics" / "curated_biomodel_annotations.csv"
+OUTPUT = ROOT / "data" / "curated" / "annotations" / "curated_biomodel_annotations.csv"
 API = "https://www.biomodels.org"
 TIMEOUT = 90
 PAUSE_SECONDS = 0.15
