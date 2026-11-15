@@ -7,8 +7,8 @@ from pathlib import Path
 import pandas as pd
 import pint
 
-ROOT = Path(__file__).resolve().parent
-DATA_DIR = ROOT / "data" / "physiome"
+ROOT = Path(__file__).resolve().parents[1]
+DATA_DIR = ROOT / "data" / "curated"
 RAW_DIR = DATA_DIR / "raw"
 STATS_DIR = DATA_DIR / "statistics"
 CONFIG_DIR = DATA_DIR / "config"
@@ -70,11 +70,7 @@ def write_failed_models(df: pd.DataFrame) -> int:
                 stages = [stage for stage in (row.get("stage", "").split(";"))
                           if stage and stage != "non_normalizable_units"]
                 if stages:
-                    existing[model_id] = {
-                        "model_id": model_id,
-                        "stage": ";".join(stages),
-                        "details": row.get("details", ""),
-                    }
+                    existing[model_id] = {"model_id": model_id, "stage": ";".join(stages), "details": ""}
 
     issues: dict[str, set[str]] = defaultdict(set)
     for row in df.dropna(subset=["units"]).itertuples(index=False):
@@ -103,10 +99,7 @@ def write_failed_models(df: pd.DataFrame) -> int:
     return len(issues)
 
 def main():
-    raw_path = RAW_DIR / "parameters_raw.csv"
-    if not raw_path.exists():
-        raise FileNotFoundError(f"Run extract_physiome_params.py first; missing {raw_path}")
-    df = pd.read_csv(raw_path, low_memory=False)
+    df = pd.read_csv(RAW_DIR / "parameters_raw.csv", low_memory=False)
     # Count raw strings first so unusual or unparseable units remain represented
     # in the report, even though only parsed units can contribute to dimensions.
     units = df["units"].dropna().astype(str).str.strip()

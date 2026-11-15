@@ -16,7 +16,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 import libsbml
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data" / "curated"
 RAW_DIR = DATA_DIR / "raw"
 CONFIG_DIR = DATA_DIR / "config"

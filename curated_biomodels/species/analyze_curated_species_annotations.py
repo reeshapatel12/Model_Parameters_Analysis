@@ -6,7 +6,7 @@ from pathlib import Path
 
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT / "data" / "curated" / "annotations"
 INPUT = DATA_DIR / "species_raw.csv"
 OUTPUT = DATA_DIR / "species_annotation_statistics.csv"

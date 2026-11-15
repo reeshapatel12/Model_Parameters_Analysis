@@ -8,6 +8,7 @@ import time
 import zipfile
 from html.parser import HTMLParser
 from pathlib import Path
+import sys
 
 import libsbml
 import pandas as pd
@@ -15,9 +16,11 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+MODEL_SCRIPTS_DIR = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(MODEL_SCRIPTS_DIR))
 from extract_params import get_all_public_model_ids, get_model_organism
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 OUTPUT = ROOT / "data" / "curated" / "annotations" / "species_raw.csv"
 API = "https://www.biomodels.org"
 TIMEOUT = 90
