@@ -1,4 +1,4 @@
-"""Normalize curated species units to the most common mole unit."""
+"""Keep mole-dimension species and normalize their values to moles."""
 from __future__ import annotations
 
 from pathlib import Path
@@ -33,41 +33,26 @@ def main() -> None:
     species = pd.read_csv(INPUT)
     parsed = species["units"].map(parse_unit)
     mole_rows = parsed.map(lambda unit: unit is not None and unit.dimensionality == UREG.mole.dimensionality)
-    # Select the most frequent original unit spelling among units dimensionally
-    # equivalent to moles. Convert only these rows; preserve all others as-is.
-    counts = species.loc[mole_rows, "units"].dropna().value_counts()
-    target_unit = parse_unit(counts.index[0]) if not counts.empty else None
-    target_text = str(counts.index[0]) if not counts.empty else None
-
-    output = species.copy()
+    # Exclude all non-mole, missing, and unparseable units from this processed
+    # table. The normalized target is always the SI amount unit, mole.
+    output = species.loc[mole_rows].copy()
     output["normalized_value"] = pd.NA
-    output["normalized_units"] = pd.NA
-    output["conversion_status"] = "not_attempted"
-    for index, unit in parsed.items():
+    output["normalized_units"] = "mole"
+    output["conversion_status"] = "missing_value"
+    for index, unit in parsed.loc[mole_rows].items():
         value = species.at[index, "initial_value"]
-        if pd.isna(species.at[index, "units"]) or not str(species.at[index, "units"]).strip():
-            output.at[index, "conversion_status"] = "missing_unit"
-        elif unit is None:
-            output.at[index, "conversion_status"] = "unparseable_unit"
-        elif not mole_rows.at[index]:
-            output.at[index, "conversion_status"] = "non_mole_unit"
-        elif target_unit is None:
-            output.at[index, "conversion_status"] = "no_mole_target_unit"
-        elif pd.isna(value):
-            output.at[index, "normalized_units"] = target_text
-            output.at[index, "conversion_status"] = "missing_value"
-        else:
-            try:
-                quantity = float(value) * unit
-                output.at[index, "normalized_value"] = quantity.to(target_unit).magnitude
-                output.at[index, "normalized_units"] = target_text
-                output.at[index, "conversion_status"] = "converted"
-            except (pint.errors.DimensionalityError, TypeError, ValueError):
-                output.at[index, "conversion_status"] = "conversion_error"
+        if pd.isna(value):
+            continue
+        try:
+            quantity = float(value) * unit
+            output.at[index, "normalized_value"] = quantity.to(UREG.mole).magnitude
+            output.at[index, "conversion_status"] = "converted"
+        except (pint.errors.PintError, TypeError, ValueError):
+            output.at[index, "conversion_status"] = "conversion_error"
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     output.to_csv(OUTPUT, index=False)
-    print(f"Normalized {int(mole_rows.sum())} mole-unit rows to {target_text or 'no available target unit'}; wrote {OUTPUT}")
+    print(f"Kept {len(output)} mole-unit species and normalized to mole; wrote {OUTPUT}")
 
 
 if __name__ == "__main__":
