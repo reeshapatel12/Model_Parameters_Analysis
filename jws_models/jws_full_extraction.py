@@ -47,8 +47,11 @@ def empty_model_counts() -> dict[str, int]:
     return {
         "Directly annotated elements": 0,
         "Annotated species": 0,
+        "Total species": 0,
         "Annotated reactions": 0,
         "Total reactions": 0,
+        "Total compartments": 0,
+        "Annotated compartments": 0,
         "Total parameters": 0,
         "Direct RDF links": 0,
     }
@@ -85,7 +88,8 @@ def extract_catalog_models(session, models, cache_dir, delay):
             slug, metadata.get("Organism", ""), metadata.get("Tissue", ""),
             metadata.get("Process", ""), metadata.get("Model type", ""), status,
             counts["Directly annotated elements"], counts["Annotated species"],
-            counts["Annotated reactions"], counts["Total reactions"],
+            counts["Total species"], counts["Annotated reactions"], counts["Total reactions"],
+            counts["Total compartments"], counts["Annotated compartments"],
             counts["Total parameters"], counts["Direct RDF links"], checksum,
             error, sbml_url, model_page,
         ])
@@ -96,6 +100,7 @@ def extract_catalog_models(session, models, cache_dir, delay):
 
     tables["Model Inventory"] = inventory
     tables["Annotated Elements"].sort(key=lambda row: (row[1], row[2], row[3]))
+    tables["Complete Element Inventory"].sort(key=lambda row: (row[0], row[1], row[2]))
     for number, row in enumerate(tables["Annotated Elements"], start=1):
         row[0] = number
     return tables
@@ -134,6 +139,11 @@ def extraction_summary(tables, models, page_audit, duplicates, subset=False):
         "Models failed": sum(row[5] != "ok" for row in inventory),
         "Total annotated elements (RDF)": len(tables["Annotated Elements"]),
         "Total annotation links": len(tables["Annotation Links"]),
+        "Total SBML species": sum(row[8] for row in inventory if row[5] == "ok"),
+        "Total SBML reactions": sum(row[10] for row in inventory if row[5] == "ok"),
+        "Total SBML compartments": sum(row[11] for row in inventory if row[5] == "ok"),
+        "Annotated SBML compartments": sum(row[12] for row in inventory if row[5] == "ok"),
+        "Complete species, reaction, and compartment inventory": "complete_element_inventory.csv",
         "Scope": "Curated models visible at /models/; excludes browser-session-only user models",
         "What counts": "Explicit element-level RDF resource URIs under biological/model/DC qualifiers",
         "What does not count": "SBO terms alone, model-level citations as element annotations, mere kinetic laws",

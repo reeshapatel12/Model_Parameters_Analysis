@@ -18,6 +18,7 @@ def harvest_xml(slug, xml_bytes, meta, sbml_url=None, model_url=None):
         raise ValueError('No SBML model element')
     parent_map = {c:p for p in model.iter() for c in p}
     compartments = {e.get('id'):e for e in descendants_under(model,'listOfCompartments','compartment')}
+    species = descendants_under(model,'listOfSpecies','species')
     initial_assign = {}
     for a in descendants_under(model,'listOfInitialAssignments','initialAssignment'):
         initial_assign[a.get('symbol','')] = math_expr(child(a,'math'))
@@ -26,7 +27,17 @@ def harvest_xml(slug, xml_bytes, meta, sbml_url=None, model_url=None):
         rate_rules[a.get('variable','')] = math_expr(child(a,'math'))
     globalpars = {p.get('id'):p for p in descendants_under(model,'listOfParameters','parameter')}
     reactions = {r.get('id'):r for r in descendants_under(model,'listOfReactions','reaction')}
-    kinetics, params, elrows, linkrows, refs = [], [], [], [], []
+    kinetics, params, elrows, linkrows, refs, complete_elements = [], [], [], [], [], []
+    for typ, elements in [('species', species), ('reaction', list(reactions.values())),
+                          ('compartment', list(compartments.values()))]:
+        for element in elements:
+            links = rdf_links(element)
+            complete_elements.append([
+                slug, typ, element.get('id', ''), element.get('name', ''),
+                element.get('compartment', '') if typ == 'species' else '',
+                '; '.join(cv_id(uri)[1] for _, uri in links),
+                '; '.join(uri for _, uri in links), bool(links), sbml_url,
+            ])
     reaction_detail = {}
     for rid, rxn in reactions.items():
         kin = child(rxn,'kineticLaw')
@@ -133,9 +144,12 @@ def harvest_xml(slug, xml_bytes, meta, sbml_url=None, model_url=None):
     counter=Counter(x[2] for x in elrows)
     stats={'Directly annotated elements':len(elrows),
            'Annotated species':counter['species'],'Annotated reactions':counter['reaction'],
-           'Total reactions':len(reactions),'Total parameters':len(params),
+           'Total species':len(species), 'Total reactions':len(reactions),
+           'Total compartments':len(compartments),
+           'Annotated compartments':counter['compartment'], 'Total parameters':len(params),
            'Direct RDF links':len(linkrows)}
     return {'Annotated Elements':elrows,'Annotation Links':linkrows,
-            'Reaction Kinetics':kinetics,'Parameters':params,'Model References':refs},stats
+            'Reaction Kinetics':kinetics,'Parameters':params,'Model References':refs,
+            'Complete Element Inventory':complete_elements},stats
 
 

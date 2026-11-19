@@ -36,8 +36,13 @@ HEADERS = {
     ],
     "Model Inventory": [
         "Model", "Organism", "Tissue", "Process", "Model type", "Download status",
-        "Directly annotated elements", "Annotated species", "Annotated reactions",
-        "Total reactions", "Total parameters", "Direct RDF links", "SBML SHA256",
+        "Directly annotated elements", "Annotated species", "Total species",
+        "Annotated reactions", "Total reactions", "Total compartments",
+        "Annotated compartments", "Total parameters", "Direct RDF links", "SBML SHA256",
         "Error", "SBML source URL", "Model page URL",
+    ],
+    "Complete Element Inventory": [
+        "Model", "Element type", "Element ID", "Element name", "Compartment",
+        "Annotation IDs", "Annotation URLs", "Is directly annotated", "SBML source URL",
     ],
 }
