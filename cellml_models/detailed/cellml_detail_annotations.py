@@ -76,16 +76,52 @@ def extract_model(model: dict, xml_bytes: bytes):
     resolved = resolve_variable_values(root)
     rdf_records, labels = _rdf_records(root)
     by_meta = {}
+    element_inventory = []
+    total_components = annotated_components = 0
+    total_variables = annotated_variables = 0
+    seen_inventory_ids = set()
     for component in root.iter():
         if local(component.tag) != "component":
             continue
         component_name = component.get("name", "")
         component_meta = component.get("{http://www.cellml.org/metadata/1.0#}id", "")
+        component_id = component_meta or component_name
+        component_links = sorted(set(rdf_records.get(component_meta, []))) if component_meta else []
+        component_key = ("Component", component_id)
+        if component_key not in seen_inventory_ids:
+            seen_inventory_ids.add(component_key)
+            total_components += 1
+            annotated_components += bool(component_links)
+            element_inventory.append({
+                "Model ID": model.get("model_id", ""), "CellML model": model.get("model_name", ""),
+                "Element type": "Component", "Element ID": component_id,
+                "Element name": component_name, "Component": "", "CellML units": "",
+                "Initial value": "", "Annotation IDs": "; ".join(uri for _, uri in component_links),
+                "Annotation relations": "; ".join(relation for relation, _ in component_links),
+                "Is directly annotated": bool(component_links), "Source file": model.get("source_file", ""),
+            })
         for variable in component:
             if local(variable.tag) != "variable":
                 continue
             key = (component_name, variable.get("name", ""))
             meta = variable.get("{http://www.cellml.org/metadata/1.0#}id", "")
+            variable_id = meta or f"{component_name}/{key[1]}"
+            variable_links = sorted(set(rdf_records.get(meta, []))) if meta else []
+            variable_key = ("Variable", variable_id)
+            if variable_key not in seen_inventory_ids:
+                seen_inventory_ids.add(variable_key)
+                total_variables += 1
+                annotated_variables += bool(variable_links)
+                element_inventory.append({
+                    "Model ID": model.get("model_id", ""), "CellML model": model.get("model_name", ""),
+                    "Element type": "Variable", "Element ID": variable_id,
+                    "Element name": key[1], "Component": component_name,
+                    "CellML units": variable.get("units", ""),
+                    "Initial value": variable.get("initial_value", ""),
+                    "Annotation IDs": "; ".join(uri for _, uri in variable_links),
+                    "Annotation relations": "; ".join(relation for relation, _ in variable_links),
+                    "Is directly annotated": bool(variable_links), "Source file": model.get("source_file", ""),
+                })
             if meta:
                 by_meta[meta] = ("Variable", f"{key[1]} ({component_name})", resolved[key])
         if component_meta:
@@ -124,4 +160,9 @@ def extract_model(model: dict, xml_bytes: bytes):
             "CellML units": info["units"], "Value provenance": info["status"],
             "Notes": info["notes"], "Value evidence": url if info["value"] is not None else "",
         })
-    return annotations, quantified, len(by_meta)
+    counts = {
+        "Total components": total_components, "Annotated components": annotated_components,
+        "Total variables": total_variables, "Annotated variables": annotated_variables,
+        "Annotated elements": annotated_components + annotated_variables,
+    }
+    return annotations, quantified, element_inventory, counts

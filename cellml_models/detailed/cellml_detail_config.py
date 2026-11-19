@@ -20,7 +20,13 @@ QUANTIFIED_HEADERS = [
 ]
 AUDIT_HEADERS = [
     "Model ID", "CellML model", "Workspace", "Revision", "Source file",
-    "Exposure IDs", "Status", "Annotated elements", "Annotation links",
+    "Exposure IDs", "Status", "Total components", "Annotated components",
+    "Total variables", "Annotated variables", "Annotated elements", "Annotation links",
     "Quantified elements", "Error",
+]
+ELEMENT_INVENTORY_HEADERS = [
+    "Model ID", "CellML model", "Element type", "Element ID", "Element name",
+    "Component", "CellML units", "Initial value", "Annotation IDs",
+    "Annotation relations", "Is directly annotated", "Source file",
 ]
 READ_ME_HEADERS = ["Field", "Value"]

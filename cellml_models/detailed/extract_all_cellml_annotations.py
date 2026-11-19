@@ -53,7 +53,7 @@ def main():
             if index % 20 == 0 or index == len(futures):
                 LOG.info("Fetched archive revisions %d/%d", index, len(futures))
 
-    annotations, quantified, audit = [], [], []
+    annotations, quantified, element_inventory, audit = [], [], [], []
     success_count = 0
     for index, model in enumerate(models, start=1):
         key = (model["workspace_id"], model["revision_id"])
@@ -68,15 +68,18 @@ def main():
             xml_bytes = _match_file(model, archive_contents.get(key, {}))
             if not xml_bytes:
                 raise FileNotFoundError(f"Source file not found in archive: {model.get('source_file')}")
-            model_annotations, model_quantified, element_count = extract_model(model, xml_bytes)
+            model_annotations, model_quantified, model_inventory, counts = extract_model(model, xml_bytes)
             annotations.extend(model_annotations)
             quantified.extend(model_quantified)
+            element_inventory.extend(model_inventory)
             success_count += 1
-            audit.append({**base, "Status": "parsed", "Annotated elements": element_count,
+            audit.append({**base, "Status": "parsed", **counts,
                           "Annotation links": len(model_annotations),
                           "Quantified elements": len(model_quantified), "Error": ""})
         except Exception as exc:
-            audit.append({**base, "Status": "failed", "Annotated elements": 0,
+            audit.append({**base, "Status": "failed", "Total components": 0,
+                          "Annotated components": 0, "Total variables": 0,
+                          "Annotated variables": 0, "Annotated elements": 0,
                           "Annotation links": 0, "Quantified elements": 0,
                           "Error": f"{error}; {exc}".strip("; ")})
         if index % 100 == 0 or index == len(models):
@@ -84,8 +87,12 @@ def main():
 
     summary = {"catalog_count": len(catalog), "model_count": len(models),
                "archive_count": len(groups), "success_count": success_count,
-               "failed_count": len(models) - success_count}
-    write_outputs(annotations, quantified, audit, summary)
+               "failed_count": len(models) - success_count,
+               "total_components": sum(int(row.get("Total components", 0) or 0) for row in audit),
+               "annotated_components": sum(int(row.get("Annotated components", 0) or 0) for row in audit),
+               "total_variables": sum(int(row.get("Total variables", 0) or 0) for row in audit),
+               "annotated_variables": sum(int(row.get("Annotated variables", 0) or 0) for row in audit)}
+    write_outputs(annotations, quantified, element_inventory, audit, summary)
     LOG.info("Wrote %d annotation associations and %d quantified elements to detailed_cellml",
              len(annotations), len(quantified))
 

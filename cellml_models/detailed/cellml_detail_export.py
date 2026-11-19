@@ -9,7 +9,8 @@ from openpyxl.styles import Font, PatternFill, Alignment
 from openpyxl.utils import get_column_letter
 
 from cellml_detail_config import (ANNOTATION_HEADERS, AUDIT_HEADERS, OUTPUT_DIR,
-                                 QUANTIFIED_HEADERS, READ_ME_HEADERS, WORKBOOK_NAME)
+                                 ELEMENT_INVENTORY_HEADERS, QUANTIFIED_HEADERS,
+                                 READ_ME_HEADERS, WORKBOOK_NAME)
 
 
 def _csv(path: Path, headers: list[str], rows: list[dict]):
@@ -37,11 +38,12 @@ def _sheet(workbook, title: str, headers: list[str], rows: list[dict]):
     return sheet
 
 
-def write_outputs(annotations: list[dict], quantified: list[dict], audit: list[dict],
-                  summary: dict):
+def write_outputs(annotations: list[dict], quantified: list[dict],
+                  element_inventory: list[dict], audit: list[dict], summary: dict):
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     _csv(OUTPUT_DIR / "cellml_annotations_values.csv", ANNOTATION_HEADERS, annotations)
     _csv(OUTPUT_DIR / "cellml_quantified_elements.csv", QUANTIFIED_HEADERS, quantified)
+    _csv(OUTPUT_DIR / "cellml_element_inventory.csv", ELEMENT_INVENTORY_HEADERS, element_inventory)
     _csv(OUTPUT_DIR / "cellml_model_audit.csv", AUDIT_HEADERS, audit)
 
     readme = [
@@ -53,6 +55,11 @@ def write_outputs(annotations: list[dict], quantified: list[dict], audit: list[d
         {"Field": "Failed model files", "Value": summary["failed_count"]},
         {"Field": "Annotation associations", "Value": len(annotations)},
         {"Field": "Quantified elements", "Value": len(quantified)},
+        {"Field": "Total CellML components", "Value": summary.get("total_components", 0)},
+        {"Field": "Components with direct annotations", "Value": summary.get("annotated_components", 0)},
+        {"Field": "Total CellML variables", "Value": summary.get("total_variables", 0)},
+        {"Field": "Variables with direct annotations", "Value": summary.get("annotated_variables", 0)},
+        {"Field": "Complete element inventory", "Value": "cellml_element_inventory.csv (all components and variables)"},
         {"Field": "Numerical value", "Value": "CellML variable initial_value when present; otherwise only values mapped through equivalent variables or evaluated from simple algebraic equations at t=0."},
         {"Field": "Units", "Value": "Original CellML units attribute; units are not normalized."},
         {"Field": "Direct", "Value": "Read from the variable's initial_value attribute."},
