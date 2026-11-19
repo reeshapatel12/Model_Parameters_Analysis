@@ -1,0 +1,59 @@
+dimensionality,most_common_unit,count
+1 / [length],(meter) ** -1,1
+1 / [substance],(mole) ** -1,30
+1 / [temperature],(kelvin) ** -1,5
+1 / [time],(second) ** -1,976
+1 / [time] ** 1.9,(hertz) ** 1.9,2
+[current],coulomb * (second) ** -1,3
+[current] * [time],coulomb,6
+[current] * [time] ** 2 / [mass] / [length] ** 2,coulomb * (joule) ** -1 * (second) ** -1,3
+[current] * [time] / [substance],coulomb * (mole) ** -1,86
+[current] ** 2 * [time] ** 4 / [mass] / [length] ** 2,farad,10
+[current] ** 2 * [time] ** 4 / [mass] / [length] ** 4,1e-06 * (farad) * (0.001 * (meter)) ** -2,5
+[current] / [length] ** 2,1e-06 * (ampere) * (0.001 * (meter)) ** -2,15
+[length],meter,28
+[length] ** 12 / [substance] ** 4,(meter) ** 12 * (mole) ** -4,2
+[length] ** 3,litre,288
+[length] ** 3 / [substance],liter * (mole) ** -1,16
+[length] ** 3 / [time],liter * (second) ** -1,28
+[length] ** 3 / [time] / [substance],(mole * (liter) ** -1) ** -1 * (second) ** -1,43
+[length] ** 4 * [mass] / [current] ** 2 / [time] ** 4,ampere * second * liter * (farad) ** -1 * (meter) ** -1 * (coulomb) ** -1,1
+[length] ** 4 * [time] / [mass],liter * (second) ** -1 * (joule * (liter) ** -1) ** -1,31
+[length] ** 5 * [mass] / [current] ** 2 / [time] ** 5,liter * (farad) ** -1 * (second) ** -1,13
+[length] ** 6 / [substance] ** 2 / [time],(mole * (liter) ** -1) ** -2 * (second) ** -1,6
+[length] ** 6 / [time] / [substance] ** 2,(meter) ** 6 * (second) ** -1 * (mole) ** -2,1
+[length] / [time],0.001 * (meter) * (0.001 * (second)) ** -1,10
+[length] / [time] ** 2,meter * (second) ** -2,2
+[mass],gram,4
+[mass] * [length] ** 2 / [current] / [time] ** 4,1e-06 * (ampere) * (1e-06 * (farad)) ** -1,121
+[mass] * [length] ** 2 / [time] ** 2,joule,25
+[mass] * [length] ** 2 / [time] ** 2 / [current] ** 2,joule * (second) ** 2 * (coulomb) ** -2,4
+[mass] * [length] ** 2 / [time] ** 2 / [substance],joule * (mole) ** -1,20
+[mass] * [length] ** 2 / [time] ** 2 / [substance] ** 3 / [temperature],joule * (mole) ** -3 * (kelvin) ** -1,1
+[mass] * [length] ** 2 / [time] ** 2 / [temperature] / [substance],joule * (mole) ** -1 * (kelvin) ** -1,37
+[mass] * [length] ** 2 / [time] ** 3 / [current],volt,83
+[mass] * [length] ** 2 / [time] ** 3 / [current] ** 2,joule * second * (coulomb) ** -2,5
+[mass] * [length] ** 2 / [time] ** 4 / [current] ** 2,joule * (coulomb) ** -2,2
+[mass] * [length] ** 5 / [time] ** 5 / [current] ** 2,gram * (meter) ** 5 * (second) ** -5 * (ampere) ** -2,2
+[mass] * [length] / [time] ** 2 / [current],joule * second * (coulomb) ** -1 * (meter) ** -1,2
+[mass] / [length] ** 3,joule * (second) ** 2 * (meter) ** -5,2
+[mass] / [length] ** 4 / [time],joule * (liter) ** -1 * (liter * (second) ** -1) ** -1,113
+[mass] / [length] ** 4 / [time] ** 2,joule * (liter) ** -1 * (liter) ** -1,83
+[mass] / [length] / [time],pascal * second,2
+[mass] / [length] / [time] ** 2,mmHg,18
+[mass] / [time],joule * second * (meter) ** -2,4
+[mass] / [time] ** 2,joule * (meter) ** -2,2
+[substance],mole,132
+[substance] / [current] / [time],(coulomb) ** -1 * mole,1
+[substance] / [length] ** 3,(meter) ** -3 * mole,457
+[substance] / [length] ** 3 / [time],0.001 * (mole) * (liter) ** -1 * (0.001 * (second)) ** -1,94
+[substance] / [time],mole * (second) ** -1,61
+[temperature],kelvin,340
+[time],second,381
+[time] * [current] / [substance],second * ampere * (mole) ** -1,9
+[time] ** 2,(second) ** 2,4
+[time] ** 2 * [current] / [mass] / [length] ** 2,(second) ** -1 * (volt) ** -1,3
+[time] ** 2 / [mass],(meter) ** 2 * (joule) ** -1,1
+[time] ** 3 * [current] / [mass] / [length] ** 2,(gram) ** -1 * (meter) ** -2 * (second) ** 3 * ampere,8
+[time] / [substance],dimensionless * (mole) ** -1 * second,2
+dimensionless,dimensionless,13444

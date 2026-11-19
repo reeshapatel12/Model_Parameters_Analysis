@@ -1,0 +1,31 @@
+dimensionality,most_common_unit,count
+1 / [length],(metre)**2 * (litre)**-1,1
+1 / [substance],(mole)**-1,3
+1 / [substance] ** 3 / [time],(mole)**-3 * (second)**-1,1
+1 / [substance] / [time],(mole)**-1 * (second)**-1,18
+1 / [time],(second)**-1,809
+[current] * [time] / [substance],10*coulomb * (10*mole)**-1,1
+[length],au,3
+[length] ** 2,(metre)**2,1
+[length] ** 3,litre,139
+[length] ** 3 / [mass],(gram)**-1 * litre,4
+[length] ** 3 / [substance],(metre)**3 * (mole)**-1,2
+[length] ** 3 / [substance] / [time],(mole)**-1 * litre * (second)**-1,31
+[length] ** 3 / [time],litre * (second)**-1,3
+[length] / [time],litre * (second)**-1 * (metre)**-2,1
+[luminosity] / [length] ** 2,lux,4
+[mass],kilogram,4
+[mass] * [length] ** 2 / [time] ** 2 / [substance] / [temperature],joule * (kelvin)**-1 * (mole)**-1,1
+[mass] * [length] ** 2 / [time] ** 3 / [current],volt,3
+[mass] ** 2 / [length] ** 6,(litre)**-2 * (gram)**2,1
+[mass] / [length] ** 3,gram * (litre)**-1,19
+[mass] / [substance],(1e-06*dimensionless)**0 * gram * (mole)**-1,6
+[substance],mole,464
+[substance] / [length] ** 3,(metre)**-3 * mole,147
+[substance] / [time],mole * (second)**-1,11
+[substance] / [time] / [length] ** 3,mole * (second)**-1 * (litre)**-1,9
+[temperature],kelvin,6
+[time],second,40
+[time] * [current] / [substance],joule * (volt)**-1 * (mole)**-1,1
+[time] ** 2 * [current] / [length] / [mass],litre * (volt)**-1 * (second)**-1 * (metre)**-2,2
+dimensionless,(dimensionless)**0,864

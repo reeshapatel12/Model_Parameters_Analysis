@@ -1,0 +1,8 @@
+dimensionality,most_common_unit,count
+[luminosity] / [length] ** 2,flux,24
+[mass],kg,2
+[substance],substance,531
+[substance] / [length] ** 3,M,584
+[temperature],kelvin,1
+[time],psec,9
+dimensionless,dimensionless,689
